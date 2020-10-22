@@ -38,6 +38,7 @@ namespace MEG_Boosting_Site
             services
                 .AddRazorPages()
                 .AddRazorRuntimeCompilation();
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +57,13 @@ namespace MEG_Boosting_Site
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
 
             app.UseRouting();
 
