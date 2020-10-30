@@ -1,0 +1,18 @@
+Notater på toolit rapport:
+
+Skrive i detaljer om alt man har brukt i prosjektperioden.
+Git, hva er det? Hvorfor bruker vi de?
+Jira --------------||-----------------
+ASP.NET Core -------------||----------
+C# ------------||--------------------
+
+++ Alt annet vi tenker å legge inn i prosjektet, JS framework osv.
+
+
+Skrive om hva produktet er, hvorfor vi lager det og hvilke behov det dekker.
+
+Beskrivelse av ALL funksjonalitet i nettsiden, hva den gjør hvor den er hvorfor vi har den osv.
+
+Beskrivelse av strukturen i prosjektet, hvordan det er bygget opp og hvordan det "visuelt" ser ut.
+
+Beskrivelse av hva som gikk bra, hva som kunne blitt gjort annerledes og hva som gikk dårlig.
