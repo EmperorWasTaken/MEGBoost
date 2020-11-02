@@ -13,7 +13,21 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Service" class="control-label"></label>
-                <input asp-for="Service" class="form-control" />
+                <select class="form-control" asp-for="Service">
+                    <option selected>Choose a service</option>
+                    <option value="WoWRetail">WoWRetail</option>
+                    <option value="WoWClassic">WoWClassic</option>
+                    <option value="CSGO">CSGO</option>
+                    <option value="LoL">LoL</option>
+                    <option value="Overwatch">Overwatch</option>
+                    <option value="R1">R1</option>
+                    <option value="R2">R2</option>
+                    <option value="M1">M1</option>
+                    <option value="M2">M2</option>
+                    <option value="M3">M3</option>
+                    <option value="DM1">DM1</option>
+                    <option value="DM2">DM2</option>
+                </select>
                 <span asp-validation-for="Service" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -23,7 +37,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Details" class="control-label"></label>
-                <input asp-for="Details" class="form-control" />
+                <textarea asp-for="Details" class="form-control"></textarea>
                 <span asp-validation-for="Details" class="text-danger"></span>
             </div>
             <div class="form-group">
