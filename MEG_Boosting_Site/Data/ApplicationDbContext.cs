@@ -15,5 +15,6 @@ namespace MEG_Boosting_Site.Data
         }
         
         public DbSet<Review> Reviews { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
