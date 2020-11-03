@@ -26,9 +26,9 @@ namespace MEG_Boosting_Site.Controllers
             
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         { 
-            return View();
+            return View(await _db.Products.OrderBy(a => a.Name).ToListAsync());
         }
         
         [HttpGet]
