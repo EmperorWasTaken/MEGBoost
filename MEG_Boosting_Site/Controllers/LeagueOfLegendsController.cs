@@ -9,5 +9,13 @@ namespace MEG_Boosting_Site.Controllers
         {
             return View();
         }
+        public IActionResult Rankedboost()
+        {
+            return View();
+        }
+        public IActionResult Winsboost()
+        {
+            return View();
+        }
     }
 }

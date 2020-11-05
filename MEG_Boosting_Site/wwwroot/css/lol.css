@@ -1,0 +1,13 @@
+body {
+    background-image: url(../images/lolback.jpeg);
+    min-height: 100%;
+    background-size: cover;
+}
+h1 {text-align: center;}
+
+#winCont{
+    margin: auto;
+    width: 50%;
+    border: 30px green;
+    padding: 10px;
+}

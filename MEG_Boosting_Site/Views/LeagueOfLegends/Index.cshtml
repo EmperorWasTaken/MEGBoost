@@ -2,5 +2,8 @@
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
-
-<h2>League Of Legends</h2>
+<link rel="stylesheet" href="~/css/lol.css" />
+<h1>League Of Legends</h1>
+<h3>Buy boost</h3>
+<input type="button" value="RankedBoost" onclick="location.href='@Url.Action("Rankedboost","LeagueOfLegends")'" />
+<input type="button" value="WinsBoost" onclick="location.href='@Url.Action("Winsboost","LeagueOfLegends")'" />
