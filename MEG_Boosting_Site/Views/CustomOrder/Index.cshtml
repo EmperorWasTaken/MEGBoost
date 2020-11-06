@@ -1,6 +1,10 @@
-﻿@{
-    ViewBag.Title = "title";
+﻿@model CustomOrder
+
+@{
+    ViewBag.Title = "Index";
     Layout = "_Layout";
 }
 
 <h2>Custom Order</h2>
+
+<input type="button" value="Custom Order" onclick="location.href='@Url.Action("Add","CustomOrder")'" />
