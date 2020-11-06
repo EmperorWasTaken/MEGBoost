@@ -5,6 +5,7 @@ namespace MEG_Boosting_Site.Data
 {
     public class ApplicationDbInitializer
     {
+        
         public static void Initialize(ApplicationDbContext db, UserManager<ApplicationUser> um,
             RoleManager<IdentityRole> rm)
         {
@@ -173,8 +174,20 @@ namespace MEG_Boosting_Site.Data
                 };
                 db.Add(DMtwo);
                 
-            }    
+            }
 
+            for (int i = 1; i <= 10; i++)
+            {
+                var CustomTest = new CustomOrder
+                {
+                    Name = $"Test bruker nr { i }",
+                    Details = $"Test custom order { i }",
+                    ApplicationUser = admin
+                };
+                
+                db.Add(CustomTest);
+            }
+            
             db.SaveChanges();
         }
     }
