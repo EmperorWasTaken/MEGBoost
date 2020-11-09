@@ -9,5 +9,21 @@ namespace MEG_Boosting_Site.Controllers
         {
             return View();
         }
+        public IActionResult Competitive()
+        {
+            return View();
+        }
+        public IActionResult Wingman()
+        {
+            return View();
+        }
+        public IActionResult ESEA()
+        {
+            return View();
+        }
+        public IActionResult Faceit()
+        {
+            return View();
+        }
     }
 }

@@ -3,4 +3,71 @@
     Layout = "_Layout";
 }
 
-<h2>Counter Strike: Global Offensive</h2>
+<link rel="stylesheet" href="~/css/csgo.css" />
+
+<div class="body_container">
+    <section id="new-header-section" class="">
+        <div class="bg_container">
+            <div id="back_id" class="main_bg_image"></div>
+            <div class="container">
+                <div class="sml_bg">
+                    <img src="images/sml_bg_csgo.png" alt="" width="100%">
+                </div>
+                <div class="fog_bg"></div>
+            </div>
+        </div>
+        <div class="title_container">
+            <div class="fixed_container"></div>
+            <div class="fill_container">
+                <div class="container">
+                    <h1 id="title_id">CSGO Boost to Desired Rank</h1>
+                    <div class="green_divider"></div>
+                    <p class="subtitle">Big Sale on CS:GO Boosting!</p>
+                </div>
+            </div>
+            <div class="fixed_container">
+                <div class="buttons_links">
+                    <a href="https://localhost:5001/CSGO/Competitive">
+                        <div class="button_link">
+                            <span>Classic CS:GO Ranks</span>
+                        </div>
+                    </a>
+                    <a href="https://localhost:5001/CSGO/ESEA">
+                        <div class="button_link">
+                            <span>ESEA Boosting</span>
+                        </div>
+                    </a>
+                    <a href="https://localhost:5001/CSGO/Faceit">
+                        <div class="button_link">
+                            <span>Faceit Boosting</span>
+                        </div>
+                    </a>
+                    <a href="https://localhost:5001/CSGO/Wingman">
+                        <div class="button_link">
+                            <span>Wingman Ranks</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+<p>---------------------testing-----------------------------------</p>
+        
+        
+<div class="fill-container">
+    <div class="container">
+        <h1 >CSGO Boost to Desired Rank</h1>
+        <p class="subtitle">Big Sale on CS:GO Boosting!</p>
+    </div>
+</div>
+<div class="flex-container">
+    <input type="button" value="Classic CS:GO Ranks" onclick="location.href='@Url.Action("Competitive", "CSGO")'"/>
+    <input type="button" value="ESEA Boosting" onclick="location.href='@Url.Action("ESEA", "CSGO")'"/>
+    <input type="button" value="Faceit Boosting" onclick="location.href='@Url.Action("Faceit", "CSGO")'"/>
+    <input type="button" value="Wingman Ranks" onclick="location.href='@Url.Action("Wingman", "CSGO")'"/>
+</div>
