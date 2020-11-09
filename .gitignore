@@ -1,6 +1,7 @@
 .idea
 bin
 cmake-build-*
+DS_store
 obj
 venv
 *.db
