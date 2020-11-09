@@ -9,5 +9,17 @@ namespace MEG_Boosting_Site.Controllers
         {
             return View();
         }
+        public IActionResult Ranked()
+        {
+            return View();
+        }
+        public IActionResult Coaching()
+        {
+            return View();
+        }
+        public IActionResult Levling()
+        {
+            return View();
+        }
     }
 }
