@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
 
 namespace MEG_Boosting_Site.Controllers
 {
@@ -9,6 +10,7 @@ namespace MEG_Boosting_Site.Controllers
         {
             return View();
         }
+        [Route("/CSGO/Competitive", Name = "competitive")]
         public IActionResult Competitive()
         {
             return View();

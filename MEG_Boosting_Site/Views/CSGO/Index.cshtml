@@ -37,12 +37,14 @@
                             <span>ESEA Boosting</span>
                         </div>
                     </a>
-                    <a href="https://localhost:5001/CSGO/Faceit">
-                        <div class="button_link">
-                            <span>Faceit Boosting</span>
-                        </div>
-                    </a>
-                    <a href="https://localhost:5001/CSGO/Wingman">
+                    <div class="button_link">
+                         <span>
+                             <a href="https://localhost:5001/CSGO/Faceit">
+                                 <span>Faceit Boosting</span>
+                             </a>
+                        </span>
+                     </div>
+                    <a asp-route="competitive">
                         <div class="button_link">
                             <span>Wingman Ranks</span>
                         </div>
@@ -51,23 +53,4 @@
             </div>
         </div>
     </section>
-</div>
-
-
-
-
-<p>---------------------testing-----------------------------------</p>
-        
-        
-<div class="fill-container">
-    <div class="container">
-        <h1 >CSGO Boost to Desired Rank</h1>
-        <p class="subtitle">Big Sale on CS:GO Boosting!</p>
-    </div>
-</div>
-<div class="flex-container">
-    <input type="button" value="Classic CS:GO Ranks" onclick="location.href='@Url.Action("Competitive", "CSGO")'"/>
-    <input type="button" value="ESEA Boosting" onclick="location.href='@Url.Action("ESEA", "CSGO")'"/>
-    <input type="button" value="Faceit Boosting" onclick="location.href='@Url.Action("Faceit", "CSGO")'"/>
-    <input type="button" value="Wingman Ranks" onclick="location.href='@Url.Action("Wingman", "CSGO")'"/>
 </div>
