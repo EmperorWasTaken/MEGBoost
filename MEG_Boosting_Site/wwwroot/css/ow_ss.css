@@ -101,6 +101,13 @@ section#new-header-section .container {
     height: 100%;
 }
 
+.container {
+    max-width: 100% !important;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+}
+
 section#new-header-section > .bg_container .sml_bg {
     position: absolute;
     height: 82%;
