@@ -6,70 +6,78 @@
     <title>@ViewData["Title"] - MEG_Boosting_Site</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/sidebar.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MEG_Boosting_Site</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <partial name="_LoginPartial" />
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">WoW</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" asp-controller="WorldOfWarcraft" asp-action="RetailIndex">Retail</a>
-                                    <a class="dropdown-item" asp-controller="WorldOfWarcraft" asp-action="ClassicIndex">Classic</a>
-                                </div>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/sitelogo-temp.png" width="160" height="90"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <partial name="_ProductPartial"/>
+                <partial name="_LoginPartial"/>
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="~/images/wow-logo-navbar.png" width="60px" height="60px"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="WorldOfWarcraft" asp-action="RetailIndex">Retail</a>
+                                <a class="dropdown-item" asp-controller="WorldOfWarcraft" asp-action="ClassicIndex">Classic</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="LeagueOfLegends" asp-action="Index">League</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Overwatch" asp-action="Index"><img src="images/ow_logo.jpg" alt="" width="40px" height="33px"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="CSGO" asp-action="Index"><img src="images/csgo_logo.png" alt="" width="39px" height="39px"></a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">School</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="ROne">R1</a>
-                                    <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="RTwo">R2</a>
-                                    <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="MOne">Matte 1</a>
-                                    <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="MTwo">Matte 2</a>
-                                    <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="MThree">Matte 3</a>
-                                    <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="DiscreteMOne">Diskret Matte 1</a>
-                                    <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="DiscreteMTwo">Diskret Matte 2</a>
-                                </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="LeagueOfLegends" asp-action="Index"><img src="~/images/lol-icon.png" width="80px" height="60px"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Overwatch" asp-action="Index"><img src="~/images/ow_logo.jpg" alt="" width="107px" height="60px"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="CSGO" asp-action="Index"><img src="~/images/csgo_logo.png" alt="" width="107px" height="60px"></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="~/images/School-Navbar-Icon.png" width="92px" height="60px"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="ROne">R1</a>
+                                <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="RTwo">R2</a>
+                                <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="MOne">Matte 1</a>
+                                <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="MTwo">Matte 2</a>
+                                <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="MThree">Matte 3</a>
+                                <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="DiscreteMOne">Diskret Matte 1</a>
+                                <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="DiscreteMTwo">Diskret Matte 2</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Review" asp-action="Index">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="CustomOrder" asp-action="Index">Custom Order</a>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="list-group list-group-flush">
+            <a asp-controller="Home" asp-action="FAQ" class="list-group-item list-group-item-action bg-light text-dark">F.A.Q</a>
+            <a asp-controller="Home" asp-action="Privacy" class="list-group-item list-group-item-action bg-light text-dark">Privacy</a>
+            <a asp-controller="Home" asp-action="About" class="list-group-item list-group-item-action bg-light text-dark">About us</a>
+            <a asp-controller="Home" asp-action="Contact" class="list-group-item list-group-item-action bg-light text-dark">Contact</a>
+            <a asp-controller="Review" asp-action="Index" class="list-group-item list-group-item-action bg-light text-dark">Reviews</a>
+            <a asp-controller="CustomOrder" asp-action="Index" class="list-group-item list-group-item-action bg-light text-dark">Custom order</a>
+        </div>
+    </div>
+    
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+</div>
 
 <footer class="border-top footer text-muted">
     <div class="container">
