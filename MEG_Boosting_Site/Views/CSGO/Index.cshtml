@@ -26,30 +26,37 @@
                 </div>
             </div>
             
-            <div class="fixed_container">
-                <div class="buttons_links">
-                    <a asp-controller="CSGO" asp-action="Competitive">
-                        <div class="button_link">
-                            <span>Classic CS:GO Ranks</span>
-                        </div>
-                    </a>
-                    <a asp-controller="CSGO" asp-action="ESEA">
-                        <div class="button_link">
-                            <span>ESEA Boosting</span>
-                        </div>
-                    </a>
-                    <a asp-controller="CSGO" asp-action="Faceit">
-                        <div class="button_link">
-                            <span>Faceit Boosting</span>
-                        </div>
-                    </a>
-                    <a asp-controller="CSGO" asp-action="Wingman">
-                        <div class="button_link">
-                            <span>Wingman Ranks</span>
-                        </div>
-                    </a>
+            <div class="row productTypeContent active maximizeBelow1200" data-id="0" data-type-name="Classic Boosting" data-type="diff" style="display: block; width: 70%; border: 0px solid #9e9e9e; padding: 25px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;"><div class="col-md-6" style="float: left;">
+                <p style="float: left; width:100%; display: block">
+                    <span style="color: #787878; font-size: 18px; font-weight: 500;"></span>
+                    <span>
+                        <input type="button" value="Classic CS:GO Ranks" class="form-control btn-dark" data-name="Classic CS:GO Ranks" name="option-steam username" onclick="location.href='@Url.Action("Competitive", "CSGO")'">
+                    </span>
+                    <span class="productOptionError"></span>
+                    </p>
+                    <p style="float: left; width:100%; display: block">
+                        <span style="color: #787878; font-size: 18px; font-weight: 500;"></span>
+                        <span>
+                            <input type="button"  value="ESEA Boosting" class="form-control btn-dark" data-name="ESEA Boosting" name="option-steam username" onclick="location.href='@Url.Action("ESEA","CSGO")'">
+                        </span>
+                        <span class="productOptionError"></span>
+                    </p>
+                    <p style="float: left; width:100%; display: block">
+                        <span style="color: #787878; font-size: 18px; font-weight: 500;"></span>
+                        <span>
+                            <input type="button"  value="Faceit Boosting" class="form-control btn-dark" data-name="Faceit Boosting" name="option-steam username" onclick="location.href='@Url.Action("Faceit","CSGO")'">
+                        </span>
+                        <span class="productOptionError"></span>
+                    </p>
+                    <p style="float: left; width:100%; display: block">
+                        <span style="color: #787878; font-size: 18px; font-weight: 500;"></span>
+                        <span>
+                            <input type="button"  value="Wingman Ranks" class="form-control btn-dark" data-name="Wingman Ranks" name="option-steam username" onclick="location.href='@Url.Action("Wingman","CSGO")'">
+                        </span>
+                        <span class="productOptionError"></span>
+                    </p>
                     
-                </div>
+            </div><br><br>
             </div>
         </div>
     </section>
