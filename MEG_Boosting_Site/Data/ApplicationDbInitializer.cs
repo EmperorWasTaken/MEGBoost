@@ -58,7 +58,26 @@ namespace MEG_Boosting_Site.Data
                 {
                     Service = "WoWRetail",
                     Name = $"WoWRetailBoost nr { i }",
-                    Details = $"Some very interesting details about boost nr { i }",
+                    Details = "<ul>" +
+                              "<li>" +
+                              "You will get boosted hard   " +
+                              "</li>" +
+                              "<li>" +
+                              "We will carry you all the way to the top   " +
+                              "</li>" +
+                              "<li>" +
+                              "You will pay us grand dollaritos" +
+                              "</li>" +
+                              "<li>" +
+                              "We will be able to deliver (the project) on time. (hopefully)" +
+                              "</li>" +
+                              "<li>" +
+                              "This will be a very pleasant experience" +
+                              "</li>" +
+                              "<li>" +
+                              "If you have any questions feel free to visit the F.A.Q site, or contact us by mail" +
+                              "</li>" +
+                              "</ul>",
                     Image = "~/images/wow-logo-navbar.png",
                     Price = 10 * i
                 };
@@ -68,7 +87,26 @@ namespace MEG_Boosting_Site.Data
                 {
                     Service = "WoWClassic",
                     Name = $"WoWClassicBoost nr { i }",
-                    Details = $"Some very interesting details about boost nr { i }",
+                    Details = "<ul>" +
+                              "<li>" +
+                              "You will get boosted hard   " +
+                              "</li>" +
+                              "<li>" +
+                              "We will carry you all the way to the top   " +
+                              "</li>" +
+                              "<li>" +
+                              "You will pay us grand dollaritos" +
+                              "</li>" +
+                              "<li>" +
+                              "We will be able to deliver (the project) on time. (hopefully)" +
+                              "</li>" +
+                              "<li>" +
+                              "This will be a very pleasant experience" +
+                              "</li>" +
+                              "<li>" +
+                              "If you have any questions feel free to visit the F.A.Q site, or contact us by mail" +
+                              "</li>" +
+                              "</ul>",
                     Image = "~/images/wow-logo-navbar.png",
                     Price = 10 * i
                 };
