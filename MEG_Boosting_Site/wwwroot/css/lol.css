@@ -1,13 +1,54 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    border-spacing:0;
+    text-decoration:none;
+    list-style-type:none;
+    -webkit-font-smoothing:antialiased;
+    font-family:'Roboto', sans-serif
+}
 body {
     background-image: url(../images/lolback.jpeg);
     min-height: 100%;
     background-size: cover;
 }
-h1 {text-align: center;}
+h1 {
+    text-align: center;
+    color: pink;
+}
 
 #winCont{
     margin: auto;
     width: 50%;
     border: 30px green;
     padding: 10px;
+}
+
+#LoL_Index_RankedBoost_Container {
+    position: absolute;
+    width:40%;
+    height: 40%;
+    float:left;
+    padding: 10px;
+    top: 350px;
+    left: 250px;
+    
+}
+
+
+#LoL_Index_WinsBoost_Container {
+    position: absolute;
+    width:40%;
+    height: 40%;
+    float:right;
+    padding: 10px;
+    top: 350px;
+    right: 220px;
+    
+
+}
+
+#test{
+    
 }
