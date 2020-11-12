@@ -19,3 +19,11 @@
     float: left;
     padding: 2px;
 }
+
+.bg_container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/big_bg_wow_retail.jpg);
+    background-size: cover;
+    border-image-repeat: stretch;
+}
