@@ -8,11 +8,10 @@
 <link rel="stylesheet" href="~/css/wow.css" />
 
 <h2>World of Warcraft: Shadowlands</h2>
-<div class="bg_container">
-    <div class="float-container">
-        @foreach (var product in Model)
-        {
-            <partial name="_WoWBoostPartial" model="product" />
-        }
-    </div>
+
+<div class="float-container">
+    @foreach (var product in Model)
+    {
+        <partial name="_WoWBoostPartial" model="product" />
+    }
 </div>
