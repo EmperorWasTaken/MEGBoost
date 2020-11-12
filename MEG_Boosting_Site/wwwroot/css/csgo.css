@@ -90,7 +90,7 @@ section#new-header-section > .bg_container {
     width: 100%;
     height: 100%;
     position: absolute;
-    overflow: hidden;
+    overflow: visible;
 }
 
 section#new-header-section .container {
@@ -217,6 +217,7 @@ a {
     color:white;
     text-decoration:none;
     z-index: 2;
+    position: relative;
 
 }
 a:hover {
