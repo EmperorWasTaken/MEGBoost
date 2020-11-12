@@ -20,6 +20,7 @@ namespace MEG_Boosting_Site.Controllers
         }
 
         // GET
+        [HttpGet]
         public async Task<ActionResult> ClassicIndex()
         {
             var WoWClassic = _db.Products.Where(n => n.Service.Equals("WoWClassic")).ToListAsync();
@@ -27,10 +28,29 @@ namespace MEG_Boosting_Site.Controllers
         }
         
         // GET
+        [HttpGet]
         public async Task<IActionResult> RetailIndex()
         {
             var WoWRetail = _db.Products.Where(s => s.Service.Equals("WoWRetail")).ToListAsync();
             return View(await WoWRetail);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            
+            var WoWBoost = await _db.Products.FirstOrDefaultAsync(i => i.Id == id);
+
+            if (WoWBoost == null)
+            {
+                return NotFound();
+            }
+            
+            return View(WoWBoost);
         }
     }
 }

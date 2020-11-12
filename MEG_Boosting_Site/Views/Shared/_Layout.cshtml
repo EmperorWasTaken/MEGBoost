@@ -18,12 +18,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                <partial name="_ProductPartial"/>
                 <partial name="_LoginPartial"/>
+                <partial name="_ProductPartial"/>
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="~/images/wow-logo-navbar.png" width="60px" height="60px"></button>
+                            <button type="button" class="btn" data-toggle="dropdown"><img src="~/images/wow-logo-navbar.png" width="60px" height="60px"></button>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" asp-controller="WorldOfWarcraft" asp-action="RetailIndex">Retail</a>
                                 <a class="dropdown-item" asp-controller="WorldOfWarcraft" asp-action="ClassicIndex">Classic</a>
@@ -41,7 +41,7 @@
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="~/images/School-Navbar-Icon.png" width="92px" height="60px"></button>
+                            <button type="button" class="btn" data-toggle="dropdown"><img src="~/images/School-Navbar-Icon.png" width="92px" height="60px"></button>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="ROne">R1</a>
                                 <a class="dropdown-item" asp-controller="SchoolSubject" asp-action="RTwo">R2</a>
@@ -78,12 +78,6 @@
         </main>
     </div>
 </div>
-
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2020 - MEG_Boosting_Site - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
-</footer>
     <script src="https://unpkg.com/axios/dist/axios.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
