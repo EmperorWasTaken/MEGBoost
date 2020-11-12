@@ -56,6 +56,7 @@ button.accept-policy {
 html {
   position: relative;
   min-height: 100%;
+  
 }
 
 body {
@@ -68,4 +69,16 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+  
+}  
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+/* Style page content */
+.main {
+  margin-left: 180px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
 }
