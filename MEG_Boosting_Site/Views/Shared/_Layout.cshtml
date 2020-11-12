@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="~/css/sidebar.css" />
 </head>
 <body>
-<header>
+<header class="header" id="myHeader">
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
         <div class="container-fluid">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/MEG_Boosting_9.png" width="100" height="100"></a>
@@ -58,27 +58,26 @@
         </div>
     </nav>
 </header>
-<div class="d-flex" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="list-group list-group-flush">
-            <a asp-controller="Home" asp-action="FAQ" class="list-group-item list-group-item-action bg-light text-dark">F.A.Q</a>
-            <a asp-controller="Home" asp-action="Privacy" class="list-group-item list-group-item-action bg-light text-dark">Privacy</a>
-            <a asp-controller="Home" asp-action="About" class="list-group-item list-group-item-action bg-light text-dark">About us</a>
-            <a asp-controller="Home" asp-action="Contact" class="list-group-item list-group-item-action bg-light text-dark">Contact</a>
-            <a asp-controller="Review" asp-action="Index" class="list-group-item list-group-item-action bg-light text-dark">Reviews</a>
-            <a asp-controller="CustomOrder" asp-action="Index" class="list-group-item list-group-item-action bg-light text-dark">Custom order</a>
-        </div>
-    </div>
-    
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+<!-- Sidebar -->
+<div class="sidenav">
+    <div class="list-group list-group-flush">
+        <a asp-controller="Home" asp-action="FAQ" class="list-group-item list-group-item-action bg-light text-dark">F.A.Q</a>
+        <a asp-controller="Home" asp-action="Privacy" class="list-group-item list-group-item-action bg-light text-dark">Privacy</a>
+        <a asp-controller="Home" asp-action="About" class="list-group-item list-group-item-action bg-light text-dark">About us</a>
+        <a asp-controller="Home" asp-action="Contact" class="list-group-item list-group-item-action bg-light text-dark">Contact</a>
+        <a asp-controller="Review" asp-action="Index" class="list-group-item list-group-item-action bg-light text-dark">Reviews</a>
+        <a asp-controller="CustomOrder" asp-action="Index" class="list-group-item list-group-item-action bg-light text-dark">Custom order</a>
     </div>
 </div>
-    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    
+<div class="container main">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
