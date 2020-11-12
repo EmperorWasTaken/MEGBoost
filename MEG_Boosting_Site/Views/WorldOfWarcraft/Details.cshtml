@@ -1,0 +1,26 @@
+﻿@model Product
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="~/css/wow.css" />
+
+
+<h2>@Model.Name</h2>
+
+<img src="@Url.Content(Model.Image)" alt="Boosting image :)" width="400px" height="400px">
+
+<p>@Html.Raw(Model.Details)</p>
+
+<div class="float-container">
+    <div class="float-child" id="details-float-child">
+        <div class="child-button">
+            <a class="btn btn-dark">Buy</a>
+        </div>
+        <div class="child-button">
+            <p>@Model.Price NOK</p>
+        </div>
+    </div>
+</div>

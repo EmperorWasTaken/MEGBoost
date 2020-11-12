@@ -59,7 +59,7 @@ namespace MEG_Boosting_Site.Data
                     Service = "WoWRetail",
                     Name = $"WoWRetailBoost nr { i }",
                     Details = $"Some very interesting details about boost nr { i }",
-                    Image = "../images/wow-ikon.jpg",
+                    Image = "~/images/wow-logo-navbar.png",
                     Price = 10 * i
                 };
                 db.Add(WoWRetail);
@@ -69,7 +69,7 @@ namespace MEG_Boosting_Site.Data
                     Service = "WoWClassic",
                     Name = $"WoWClassicBoost nr { i }",
                     Details = $"Some very interesting details about boost nr { i }",
-                    Image = "../images/wow-ikon.jpg",
+                    Image = "~/images/wow-logo-navbar.png",
                     Price = 10 * i
                 };
                 db.Add(WoWClassic);
