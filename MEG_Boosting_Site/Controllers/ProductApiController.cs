@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MEG_Boosting_Site.Controllers
 {
-    [Route("api/Product")]
+    [Route("api/product")]
     [ApiController]
     public class ProductApiController : ControllerBase
     {
