@@ -1,11 +1,93 @@
+@using Microsoft.Extensions.WebEncoders.Testing
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
 <link rel="stylesheet" href="~/css/lol.css" />
-<h1>Ranked Boosting</h1>
+
+<div class="container col-2" id="LoL_Rankedboost_Player_Server_Container">
+	<h2>Your Server</h2>
+	<div id="PlayerServer">
+		<select>
+			<option disabled value="">Please select one</option>
+			<option value="EUW">EUW</option>
+			<option value="EUNE">EUNE</option>
+			<option value="NA">NA</option>
+			<option value="RU">RU</option>
+			<option value="Turkey">Turkey</option>
+			<option value="JP">JP</option>
+			<option value="KR">KR</option>
+			<option value="Taiwan">Taiwan</option>
+		</select>
+	</div>
+</div>
+<div id="LoL_Rankedboost_Player_Username">
+	<label for="LoL_Username">Username:</label>
+	<input type="text" id="LoL_Username" name="Username">
+</div>
+<div class="container col-2" id="LoL_Rankedboost_Player_Container">
+	<h2>Your rank</h2>
+	<div id="PlayerRank">
+		<select v-model="playerrank" v-on:change="lolrankcheck($event)">
+			<option disabled value="">Please select one</option>
+			<option value="Iron">Iron</option>
+			<option value="Bronze">Bronze</option>
+			<option value="Silver">Silver</option>
+			<option value="Gold">Gold</option>
+			<option value="Platinum">Platinum</option>
+			<option value="Diamond">Diamond</option>
+			<option value="Master">Master</option>
+			<option value="Grandmaster">Grandmaster</option>
+			<option value="Challanger">Challanger</option>
+		</select>
+		<div>
+			<template >
+				<select v-model="playerdivision" v-if="flip">
+					<option disabled value="">Please select one</option>
+					<option>I</option>
+					<option>II</option>
+					<option>III</option>
+					<option>IV</option>
+				</select>
+			</template>
+		</div>
+	</div>
+</div>
+<div class="container col-2" id="LoL_Rankedboost_Boost_Container">
+	<h2>Boosted rank</h2>
+	<div id="BoostRank">
+		<select v-model="boostrank" v-on:change="boostrankcheck($event)">
+			<option disabled value="">Please select one</option>
+			<option value="Iron">Iron</option>
+			<option value="Bronze">Bronze</option>
+			<option value="Silver">Silver</option>
+			<option value="Gold">Gold</option>
+			<option value="Platinum">Platinum</option>
+			<option value="Diamond">Diamond</option>
+			<option value="Master">Master</option>
+			<option value="Grandmaster">Grandmaster</option>
+			<option value="Challanger">Challanger</option>
+		</select>
+		<div>
+			<template >
+				<select v-model="boostdivision" v-if="flip">
+					<option disabled value="">Please select one</option>
+					<option>I</option>
+					<option>II</option>
+					<option>III</option>
+					<option>IV</option>
+				</select>
+			</template>
+		</div>
+	</div>
+</div>
+<div>
+	<button type="button" class="btn btn-primary" id="LoL_Rankedboost_Boost_Button">Checkout</button>
+</div>
 
 
-
-<input type="button" onclick="Dropdown()">
+@section Scripts
+{
+	<script src="~/js/Lol.js" asp-append-version="true"></script>
+}
