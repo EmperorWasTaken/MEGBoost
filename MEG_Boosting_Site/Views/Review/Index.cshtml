@@ -9,7 +9,7 @@
         <div v-for="review in reviews">
             <div class="review-container col-4 float-left">
                 <div class="review-title text-center">
-                    {{ review.title }}
+                    {{review.applicationUser.nickname }} {{ review.title }}
                 </div>
                 <div class="review-content text-center">
                     {{ review.content }}

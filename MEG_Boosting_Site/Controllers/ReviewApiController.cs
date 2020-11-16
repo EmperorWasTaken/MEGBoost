@@ -2,6 +2,7 @@
 using MEG_Boosting_Site.Data;
 using MEG_Boosting_Site.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace MEG_Boosting_Site.Controllers
 {
@@ -22,7 +23,7 @@ namespace MEG_Boosting_Site.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            return Ok(_db.Reviews.ToList());
+            return Ok(_db.Reviews.Include(a => a.ApplicationUser).OrderByDescending(i => i.Id).ToList());
         }
 
         [HttpGet("{id}")]
