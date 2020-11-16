@@ -49,6 +49,41 @@ h1 {
 
 }
 
+#LoL_Rankedboost_Player_Container{
+    position: absolute;
+    float:left;
+    padding: 10px;
+    top: 350px;
+    right: 900px;
+}
+#LoL_Rankedboost_Boost_Container{
+    position: absolute;
+    float:right;
+    padding: 10px;
+    top: 350px;
+    right: 740px;
+}
+#LoL_Rankedboost_Player_Server_Container{
+    position: absolute;
+    float:left;
+    padding: 10px;
+    top: 350px;
+    right: 1100px;
+}
+#LoL_Rankedboost_Player_Username{
+    position: absolute;
+    float:left;
+    padding: 10px;
+    top: 420px;
+    right: 1324px;
+}
+#LoL_Rankedboost_Boost_Button{
+    position: absolute;
+    float:right;
+    padding: 10px;
+    top: 490px;
+    right: 900px;
+}
 #test{
     
 }
