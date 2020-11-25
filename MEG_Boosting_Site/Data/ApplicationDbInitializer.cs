@@ -42,8 +42,17 @@ namespace MEG_Boosting_Site.Data
                 
                 var review = new Review
                 {
-                    Title = $"Title {i}",
-                    Content = $"ReviewContent {i}",
+                    Title = $"Title for review nr {i}",
+                    Content = "Lorem ipsum dolor sit amet, consectetur adipiscing" +
+                              " elit, sed do eiusmod tempor incididunt ut labore et" +
+                              " dolore magna aliqua. Auctor neque vitae tempus quam" +
+                              " pellentesque nec. Est placerat in egestas erat." +
+                              " Massa tempor nec feugiat nisl pretium fusce id" +
+                              " velit ut. Sit amet est placerat in egestas erat imperdiet." +
+                              " Massa massa ultricies mi quis. Purus semper eget duis at" +
+                              " tellus at urna condimentum. Gravida quis blandit turpis" +
+                              " cursus in hac. Pellentesque sit amet porttitor eget dolor" +
+                              " morbi non arcu risus.",
                     ApplicationUser = admin
                 };
 

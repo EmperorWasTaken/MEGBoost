@@ -1,0 +1,25 @@
+﻿.float-container {
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.float-child {
+    width: 33%;
+    float: left;
+    padding: 20px;
+    border: solid;
+    border-color: #000000;
+}
+
+.review-container {
+    margin: 10px;
+    border-color: #1b1b1b;
+    border: solid;
+}
+
+.review-title {
+    border: solid;
+    border-color: #1b1b1b;
+}
+
