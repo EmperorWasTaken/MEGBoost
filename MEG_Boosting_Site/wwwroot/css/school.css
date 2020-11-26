@@ -1,0 +1,48 @@
+﻿.float-container {
+    padding: 20px;
+}
+
+.float-child {
+    width: 33%;
+    float: left;
+    padding: 11px;
+}
+
+.child-button {
+    width: 50%;
+    float: left;
+}
+
+.details-child-button {
+    width: 100%;
+    float: left;
+}
+
+body {
+    background-color: #032454;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.details-container {
+    border: solid;
+    border-color: #ffd85d;
+    background-color: #1b1b1b;
+    font-family: 'Roboto', sans-serif;
+    color: #cfc7a7;
+}
+
+#details-buttons {
+    float: left;
+}
+
+#details-price-tag {
+    color: #ffffff;
+}
+
+.display-2 {
+    font-family: 'Roboto', sans-serif;
+    color: #f3c209;
+}

@@ -1,0 +1,14 @@
+﻿@model Product
+
+<div class="float-child">
+    <div class="container">
+        <img src="@Url.Content(@Model.Image)" alt="this should have been a boost image :(" width="300px" height="300px" />
+    </div>
+    <div class="child-button">
+        <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-dark btn-block">View</a>
+    </div>
+    <div class="child-button">
+        <a class="btn btn-dark btn-block">Buy</a>
+    </div>
+</div>
+

@@ -156,7 +156,7 @@ namespace MEG_Boosting_Site.Data
                     Service = "R1",
                     Name = $"R1Boost nr { i }",
                     Details = $"Some very interesting details about boost nr { i }",
-                    Image = $"cool-image-nr{ i }",
+                    Image = "~/images/School/ROne_Temp.png",
                     Price = 10 * i
                 };
                 db.Add(Rone);
@@ -166,7 +166,7 @@ namespace MEG_Boosting_Site.Data
                     Service = "R2",
                     Name = $"R2Boost nr { i }",
                     Details = $"Some very interesting details about boost nr { i }",
-                    Image = $"cool-image-nr{ i }",
+                    Image = "~/images/School/RTwo_Temp.png",
                     Price = 10 * i
                 };
                 db.Add(Rtwo);
@@ -176,7 +176,7 @@ namespace MEG_Boosting_Site.Data
                     Service = "M1",
                     Name = $"M1Boost nr { i }",
                     Details = $"Some very interesting details about boost nr { i }",
-                    Image = $"cool-image-nr{ i }",
+                    Image = "~/images/School/MOne_Temp.png",
                     Price = 10 * i
                 };
                 db.Add(Mone);
@@ -186,7 +186,7 @@ namespace MEG_Boosting_Site.Data
                     Service = "M2",
                     Name = $"M2Boost nr { i }",
                     Details = $"Some very interesting details about boost nr { i }",
-                    Image = $"cool-image-nr{ i }",
+                    Image = "~/images/School/MTwo_Temp.png",
                     Price = 10 * i
                 };
                 db.Add(Mtwo);
@@ -196,7 +196,7 @@ namespace MEG_Boosting_Site.Data
                     Service = "M3",
                     Name = $"M3Boost nr { i }",
                     Details = $"Some very interesting details about boost nr { i }",
-                    Image = $"cool-image-nr{ i }",
+                    Image = "~/images/School/MThree_Temp.png",
                     Price = 10 * i
                 };
                 db.Add(Mthree);
@@ -206,7 +206,7 @@ namespace MEG_Boosting_Site.Data
                     Service = "DM1",
                     Name = $"DM1Boost nr { i }",
                     Details = $"Some very interesting details about boost nr { i }",
-                    Image = $"cool-image-nr{ i }",
+                    Image = "~/images/School/DMOne_Temp.png",
                     Price = 10 * i
                 };
                 db.Add(DMone);
@@ -216,7 +216,7 @@ namespace MEG_Boosting_Site.Data
                     Service = "DM2",
                     Name = $"DM2Boost nr { i }",
                     Details = $"Some very interesting details about boost nr { i }",
-                    Image = $"cool-image-nr{ i }",
+                    Image = "~/images/School/DMTwo_Temp.png",
                     Price = 10 * i
                 };
                 db.Add(DMtwo);
