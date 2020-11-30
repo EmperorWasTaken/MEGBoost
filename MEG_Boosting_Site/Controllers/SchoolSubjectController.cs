@@ -62,5 +62,23 @@ namespace MEG_Boosting_Site.Controllers
             var DMTwo = _db.Products.Where(n => n.Service.Equals("DM2")).ToListAsync();
             return View(await DMTwo);
         }
+        
+        [HttpGet]
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            
+            var SchoolBoost = await _db.Products.FirstOrDefaultAsync(i => i.Id == id);
+
+            if (SchoolBoost == null)
+            {
+                return NotFound();
+            }
+            
+            return View(SchoolBoost);
+        }
     }
 }

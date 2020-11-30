@@ -5,48 +5,13 @@
     Layout = "_Layout";
 }
 
-<h2>Matte: R2</h2>
+<link rel="stylesheet" href="~/css/school.css" />
 
-<table class="table">
-    <thead>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Service)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Details)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Image)
-        </th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (var item in Model)
+<h2>R2</h2>
+
+<div class="float-container">
+    @foreach (var product in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Service)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Details)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Image)
-            </td>
-        </tr>
+        <partial name="_SchoolSubjectPartial" model="product" />
     }
-    </tbody>
-</table>
+</div>

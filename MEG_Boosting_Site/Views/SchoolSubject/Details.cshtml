@@ -1,0 +1,30 @@
+﻿@model Product
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="~/css/school.css" />
+
+<div class="main-container">
+    <div class="headerline">
+        <h2 class="display-2 text-center">@Model.Name</h2>
+        <div class="float-container">
+            <div class="float-child float-left">
+                <img src="@Url.Content(@Model.Image)" width="500px" height="500px">
+            </div>
+            <div class="float-child float-right details-container">
+                <p>@Html.Raw(Model.Details)</p>
+                <div class="container" id="details-buttons details-buy-button">
+                    <div class="float-left">
+                        <a class="btn btn-dark">Buy</a>
+                    </div>
+                    <div class="float-right" id="details-price-tag">
+                        <p id="details-price-tag">@Model.Price NOK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
