@@ -154,8 +154,29 @@ namespace MEG_Boosting_Site.Data
                 var Rone = new Product
                 {
                     Service = "R1",
-                    Name = $"R1Boost nr { i }",
-                    Details = $"Some very interesting details about boost nr { i }",
+                    Name = $"R1 Math Boost { i }",
+                    Details = "<ul>" +
+                              "<li>" +
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur ultricies mattis est et efficitur." +
+                              "</li>" +
+                              "<li>" +
+                              "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                              "</li>" +
+                              "<li>" +
+                              "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                              "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                              "viverra felis eget, tempus erat." +
+                              "</li>" +
+                              "<li>" +
+                              "Morbi finibus faucibus lectus nec ullamcorper." +
+                              "</li>" +
+                              "</ul>",
                     Image = "~/images/School/ROne_Temp.png",
                     Price = 10 * i
                 };
@@ -164,8 +185,29 @@ namespace MEG_Boosting_Site.Data
                 var Rtwo = new Product
                 {
                     Service = "R2",
-                    Name = $"R2Boost nr { i }",
-                    Details = $"Some very interesting details about boost nr { i }",
+                    Name = $"R2 Math Boost { i }",
+                    Details = "<ul>" +
+                              "<li>" +
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur ultricies mattis est et efficitur." +
+                              "</li>" +
+                              "<li>" +
+                              "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                              "</li>" +
+                              "<li>" +
+                              "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                              "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                              "viverra felis eget, tempus erat." +
+                              "</li>" +
+                              "<li>" +
+                              "Morbi finibus faucibus lectus nec ullamcorper." +
+                              "</li>" +
+                              "</ul>",
                     Image = "~/images/School/RTwo_Temp.png",
                     Price = 10 * i
                 };
@@ -174,8 +216,29 @@ namespace MEG_Boosting_Site.Data
                 var Mone = new Product
                 {
                     Service = "M1",
-                    Name = $"M1Boost nr { i }",
-                    Details = $"Some very interesting details about boost nr { i }",
+                    Name = $"M1 Math Boost { i }",
+                    Details = "<ul>" +
+                              "<li>" +
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur ultricies mattis est et efficitur." +
+                              "</li>" +
+                              "<li>" +
+                              "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                              "</li>" +
+                              "<li>" +
+                              "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                              "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                              "viverra felis eget, tempus erat." +
+                              "</li>" +
+                              "<li>" +
+                              "Morbi finibus faucibus lectus nec ullamcorper." +
+                              "</li>" +
+                              "</ul>",
                     Image = "~/images/School/MOne_Temp.png",
                     Price = 10 * i
                 };
@@ -184,8 +247,29 @@ namespace MEG_Boosting_Site.Data
                 var Mtwo = new Product
                 {
                     Service = "M2",
-                    Name = $"M2Boost nr { i }",
-                    Details = $"Some very interesting details about boost nr { i }",
+                    Name = $"M2 Math Boost { i }",
+                    Details = "<ul>" +
+                              "<li>" +
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur ultricies mattis est et efficitur." +
+                              "</li>" +
+                              "<li>" +
+                              "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                              "</li>" +
+                              "<li>" +
+                              "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                              "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                              "viverra felis eget, tempus erat." +
+                              "</li>" +
+                              "<li>" +
+                              "Morbi finibus faucibus lectus nec ullamcorper." +
+                              "</li>" +
+                              "</ul>",
                     Image = "~/images/School/MTwo_Temp.png",
                     Price = 10 * i
                 };
@@ -194,8 +278,29 @@ namespace MEG_Boosting_Site.Data
                 var Mthree = new Product
                 {
                     Service = "M3",
-                    Name = $"M3Boost nr { i }",
-                    Details = $"Some very interesting details about boost nr { i }",
+                    Name = $"M3 Math Boost { i }",
+                    Details = "<ul>" +
+                              "<li>" +
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur ultricies mattis est et efficitur." +
+                              "</li>" +
+                              "<li>" +
+                              "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                              "</li>" +
+                              "<li>" +
+                              "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                              "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                              "viverra felis eget, tempus erat." +
+                              "</li>" +
+                              "<li>" +
+                              "Morbi finibus faucibus lectus nec ullamcorper." +
+                              "</li>" +
+                              "</ul>",
                     Image = "~/images/School/MThree_Temp.png",
                     Price = 10 * i
                 };
@@ -204,8 +309,29 @@ namespace MEG_Boosting_Site.Data
                 var DMone = new Product
                 {
                     Service = "DM1",
-                    Name = $"DM1Boost nr { i }",
-                    Details = $"Some very interesting details about boost nr { i }",
+                    Name = $"DM1 Math Boost { i }",
+                    Details = "<ul>" +
+                              "<li>" +
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur ultricies mattis est et efficitur." +
+                              "</li>" +
+                              "<li>" +
+                              "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                              "</li>" +
+                              "<li>" +
+                              "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                              "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                              "viverra felis eget, tempus erat." +
+                              "</li>" +
+                              "<li>" +
+                              "Morbi finibus faucibus lectus nec ullamcorper." +
+                              "</li>" +
+                              "</ul>",
                     Image = "~/images/School/DMOne_Temp.png",
                     Price = 10 * i
                 };
@@ -214,8 +340,29 @@ namespace MEG_Boosting_Site.Data
                 var DMtwo = new Product
                 {
                     Service = "DM2",
-                    Name = $"DM2Boost nr { i }",
-                    Details = $"Some very interesting details about boost nr { i }",
+                    Name = $"DM2 Math Boost { i }",
+                    Details = "<ul>" +
+                              "<li>" +
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur ultricies mattis est et efficitur." +
+                              "</li>" +
+                              "<li>" +
+                              "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                              "</li>" +
+                              "<li>" +
+                              "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                              "</li>" +
+                              "<li>" +
+                              "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                              "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                              "viverra felis eget, tempus erat." +
+                              "</li>" +
+                              "<li>" +
+                              "Morbi finibus faucibus lectus nec ullamcorper." +
+                              "</li>" +
+                              "</ul>",
                     Image = "~/images/School/DMTwo_Temp.png",
                     Price = 10 * i
                 };
