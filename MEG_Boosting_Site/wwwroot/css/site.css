@@ -86,3 +86,13 @@ body {
   margin-left: 180px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
+
+.float-container {
+  padding: 20px;
+}
+
+.float-child {
+  width: 20%;
+  float: left;
+  padding: 11px;
+}

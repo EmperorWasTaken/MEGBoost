@@ -2,7 +2,48 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid">
+    @foreach (var product in Model.Products)
+    {
+        <partial name="_HomeBestsellersPartial" model="product"/>
+    }
 </div>
+
+<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Vestibulum lectus nisl, bibendum dignissim molestie et, faucibus eu sem.
+    Integer luctus, purus vel tristique rhoncus, quam orci iaculis arcu,
+    in accumsan lorem nulla sit amet purus. Nam at lacus a metus efficitur
+    rutrum a a sem. Morbi ultricies ipsum odio, id sagittis felis rutrum at.
+    Maecenas felis est, bibendum id ullamcorper id, suscipit vel purus.
+    Phasellus massa libero, hendrerit eu tortor id, tristique pharetra eros.
+    Donec convallis pretium placerat. Duis ipsum erat, efficitur quis efficitur vitae,
+    iaculis sed ex. Phasellus id luctus purus. Mauris tortor erat,
+    tincidunt id ultricies nec, semper ac metus. Cras vitae nulla lobortis orci
+    fermentum sollicitudin quis tempus lorem. Donec sapien velit, euismod
+    eu dolor sed, facilisis congue lectus.</p>
+
+
+<div class="container-fluid">
+    @foreach (var review in Model.Reviews)
+    {
+        <partial name="_HomeTopReviewPartial" model="review"/>
+    }
+</div>
+
+
+<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Vestibulum lectus nisl, bibendum dignissim molestie et, faucibus eu sem.
+    Integer luctus, purus vel tristique rhoncus, quam orci iaculis arcu,
+    in accumsan lorem nulla sit amet purus. Nam at lacus a metus efficitur
+    rutrum a a sem. Morbi ultricies ipsum odio, id sagittis felis rutrum at.
+    Maecenas felis est, bibendum id ullamcorper id, suscipit vel purus.
+    Phasellus massa libero, hendrerit eu tortor id, tristique pharetra eros.
+    Donec convallis pretium placerat. Duis ipsum erat, efficitur quis efficitur vitae,
+    iaculis sed ex. Phasellus id luctus purus. Mauris tortor erat,
+    tincidunt id ultricies nec, semper ac metus. Cras vitae nulla lobortis orci
+    fermentum sollicitudin quis tempus lorem. Donec sapien velit, euismod
+    eu dolor sed, facilisis congue lectus.</p>
+
+
+<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Vestibulum lectus nisl, bibendum dignissim molestie et, faucibus eu sem. </p>
