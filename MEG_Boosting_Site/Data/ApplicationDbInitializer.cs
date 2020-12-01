@@ -367,7 +367,20 @@ namespace MEG_Boosting_Site.Data
                     Price = 10 * i
                 };
                 db.Add(DMtwo);
-                
+
+                var Lolorders = new Order
+                {
+                    Username = $"User{i}",
+                    Server = "Euw",
+                    CurrentRank = "Silver",
+                    CurrentTier = "I",
+                    BoostedRank = "Diamond",
+                    BoostedTier = "IV",
+                    Price = 10 * i,
+                    ApplicationUser = admin
+                };
+                db.Add(Lolorders);
+
             }
 
             for (int i = 1; i <= 10; i++)

@@ -18,5 +18,7 @@ namespace MEG_Boosting_Site.Data
         public DbSet<Product> Products { get; set; }
         
         public DbSet<CustomOrder> CustomOrders { get; set; }
+        
+        public DbSet<Order> Orders { get; set; }
     }
 }

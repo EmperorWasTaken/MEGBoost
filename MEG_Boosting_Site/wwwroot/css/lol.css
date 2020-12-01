@@ -84,6 +84,13 @@ h1 {
     top: 490px;
     right: 900px;
 }
-#test{
+#PrisTest{
+    color: green;
+    font-size: 34px;
+    position: absolute;
+    float:right;
+    padding: 10px;
+    top: 490px;
+    right: 1020px;
     
 }
