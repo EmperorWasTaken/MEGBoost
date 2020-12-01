@@ -1,0 +1,54 @@
+﻿@model Product
+@{
+    var controllerChoice = "";
+    var controllerAction = "";
+    var routeId = 0;
+    switch (Model.Service)
+    {
+        case "WoWRetail":
+            controllerChoice = "WorldOfWarcraft";
+            controllerAction = "Details";
+            routeId = Model.Id;
+            break;
+        case "WoWClassic":
+            controllerAction = "Details";
+            controllerChoice = "WorldOfWarcraft";
+            routeId = Model.Id;
+            break;
+        case "CSGO":
+            controllerChoice = "CSGO";
+            controllerAction = "Index";
+            break;
+        case "LoL":
+            controllerChoice = "LeagueOfLegends";
+            controllerAction = "Index";
+            break;
+        case "Overwatch":
+            controllerChoice = "Overwatch";
+            controllerAction = "Index";
+            break;
+        default:
+            controllerChoice = "Home";
+            controllerAction = "Index";
+            break;
+    }
+
+    if (Model.Service == "WoWRetail" || Model.Service == "WoWClassic")
+    {
+        <div class="float-child">
+            <a asp-controller="@controllerChoice" asp-action="@controllerAction" asp-route-id="@Model.Id">
+                <img src="@Url.Content(@Model.Image)" alt="bestseller :)" width="200px"
+                     height="200px"/>
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="float-child">
+            <a asp-controller="@controllerChoice" asp-action="@controllerAction">
+                <img src="@Url.Content(@Model.Image)" alt="bestseller :)" width="200px"
+                     height="200px"/>
+            </a>
+        </div>
+    }
+}

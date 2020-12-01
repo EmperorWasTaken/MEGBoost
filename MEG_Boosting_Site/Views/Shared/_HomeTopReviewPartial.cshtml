@@ -1,0 +1,18 @@
+﻿@model Review
+
+<div class="float-child">
+    <div class="review-container">
+        <div class="text-center" id="reviewer-name">
+            @Model.ApplicationUser.Nickname
+        </div>
+        <div id="title">
+            <h5 class="text-center">@Model.Title</h5>
+        </div>
+        <div id="review-content">
+            <p class="text-center">@Model.Content</p>
+        </div>
+        <div class="float-right" id="review-timestamp">
+            @Model.Time
+        </div>
+    </div>
+</div>

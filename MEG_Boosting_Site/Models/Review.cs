@@ -9,9 +9,12 @@ namespace MEG_Boosting_Site.Models
         public Review()
         {
             Time = DateTime.Now.ToString("dd.MM.yyyy");
+            TopReview = false;
         }
         
         public int Id { get; set; }
+        
+        public bool TopReview { get; set; }
         
         [Required, StringLength(100), DisplayName("Title")]
         public string Title { get; set; }
