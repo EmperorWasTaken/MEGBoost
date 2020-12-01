@@ -33,6 +33,7 @@ body {
     color:#323232;
     min-width:360px;
     font-family: Roboto, sans-serif;
+    overflow: hidden;
 }
 
 .flex-container {

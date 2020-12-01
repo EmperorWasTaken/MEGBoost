@@ -39,7 +39,7 @@ namespace MEG_Boosting_Site.Data
                 };
 
                 um.CreateAsync(user, "Password1.").Wait();
-                
+
                 var review = new Review
                 {
                     Title = $"Title for review nr {i}",
@@ -58,8 +58,30 @@ namespace MEG_Boosting_Site.Data
 
                 db.Add(review);
             }
-            
-            
+
+            for (int i = 0; i < 5; i++)
+            {
+                var topreview = new Review
+                    {
+                    Title = $"Title for review nr {i}",
+                    Content = "Lorem ipsum dolor sit amet, consectetur adipiscing" +
+                              " elit, sed do eiusmod tempor incididunt ut labore et" +
+                              " dolore magna aliqua. Auctor neque vitae tempus quam" +
+                              " pellentesque nec. Est placerat in egestas erat." +
+                              " Massa tempor nec feugiat nisl pretium fusce id" +
+                              " velit ut. Sit amet est placerat in egestas erat imperdiet." +
+                              " Massa massa ultricies mi quis. Purus semper eget duis at" +
+                              " tellus at urna condimentum. Gravida quis blandit turpis" +
+                              " cursus in hac. Pellentesque sit amet porttitor eget dolor" +
+                              " morbi non arcu risus.",
+                    ApplicationUser = admin,
+                    TopReview = true
+                };
+
+                db.Add(topreview);
+            };
+
+
             // Make 10 Boosts of each service
             for (int i = 1; i <= 10; i++)
             {
@@ -367,7 +389,20 @@ namespace MEG_Boosting_Site.Data
                     Price = 10 * i
                 };
                 db.Add(DMtwo);
-                
+
+                var Lolorders = new Order
+                {
+                    Username = $"User{i}",
+                    Server = "Euw",
+                    CurrentRank = "Silver",
+                    CurrentTier = "I",
+                    BoostedRank = "Diamond",
+                    BoostedTier = "IV",
+                    Price = 10 * i,
+                    ApplicationUser = admin
+                };
+                db.Add(Lolorders);
+
             }
 
             for (int i = 1; i <= 10; i++)
@@ -381,6 +416,173 @@ namespace MEG_Boosting_Site.Data
                 
                 db.Add(CustomTest);
             }
+            
+            // Create bestsellers for the homeview
+            
+            var BestSellerWoWC = new Product
+            {
+                Service = "WoWClassic",
+                Name = "Classic BestSeller",
+                Details = "<ul>" +
+                          "<li>" +
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                          "</li>" +
+                          "<li>" +
+                          "Curabitur ultricies mattis est et efficitur." +
+                          "</li>" +
+                          "<li>" +
+                          "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                          "</li>" +
+                          "<li>" +
+                          "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                          "</li>" +
+                          "<li>" +
+                          "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                          "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                          "viverra felis eget, tempus erat." +
+                          "</li>" +
+                          "<li>" +
+                          "Morbi finibus faucibus lectus nec ullamcorper." +
+                          "</li>" +
+                          "</ul>",
+                Image = "~/images/wow-logo-navbar.png",
+                Price = 100,
+                BestSeller = true
+            };
+
+            db.Add(BestSellerWoWC);
+            
+            var BestSellerWoWR = new Product
+            {
+                Service = "WoWRetail",
+                Name = "Retail BestSeller",
+                Details = "<ul>" +
+                          "<li>" +
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                          "</li>" +
+                          "<li>" +
+                          "Curabitur ultricies mattis est et efficitur." +
+                          "</li>" +
+                          "<li>" +
+                          "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                          "</li>" +
+                          "<li>" +
+                          "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                          "</li>" +
+                          "<li>" +
+                          "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                          "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                          "viverra felis eget, tempus erat." +
+                          "</li>" +
+                          "<li>" +
+                          "Morbi finibus faucibus lectus nec ullamcorper." +
+                          "</li>" +
+                          "</ul>",
+                Image = "~/images/wow-logo-navbar.png",
+                Price = 100,
+                BestSeller = true
+            };
+
+            db.Add(BestSellerWoWR);
+            
+            var BestSellerCSGO = new Product
+            {
+                Service = "CSGO",
+                Name = "CSGO BestSeller",
+                Details = "<ul>" +
+                          "<li>" +
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                          "</li>" +
+                          "<li>" +
+                          "Curabitur ultricies mattis est et efficitur." +
+                          "</li>" +
+                          "<li>" +
+                          "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                          "</li>" +
+                          "<li>" +
+                          "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                          "</li>" +
+                          "<li>" +
+                          "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                          "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                          "viverra felis eget, tempus erat." +
+                          "</li>" +
+                          "<li>" +
+                          "Morbi finibus faucibus lectus nec ullamcorper." +
+                          "</li>" +
+                          "</ul>",
+                Image = "~/images/wow-logo-navbar.png",
+                Price = 100,
+                BestSeller = true
+            };
+
+            db.Add(BestSellerCSGO);
+            
+            var BestSellerOW = new Product
+            {
+                Service = "Overwatch",
+                Name = "Overwatch BestSeller",
+                Details = "<ul>" +
+                          "<li>" +
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                          "</li>" +
+                          "<li>" +
+                          "Curabitur ultricies mattis est et efficitur." +
+                          "</li>" +
+                          "<li>" +
+                          "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                          "</li>" +
+                          "<li>" +
+                          "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                          "</li>" +
+                          "<li>" +
+                          "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                          "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                          "viverra felis eget, tempus erat." +
+                          "</li>" +
+                          "<li>" +
+                          "Morbi finibus faucibus lectus nec ullamcorper." +
+                          "</li>" +
+                          "</ul>",
+                Image = "~/images/wow-logo-navbar.png",
+                Price = 100,
+                BestSeller = true
+            };
+
+            db.Add(BestSellerOW);
+            
+            var BestSellerLOL = new Product
+            {
+                Service = "LoL",
+                Name = "LoL BestSeller",
+                Details = "<ul>" +
+                          "<li>" +
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                          "</li>" +
+                          "<li>" +
+                          "Curabitur ultricies mattis est et efficitur." +
+                          "</li>" +
+                          "<li>" +
+                          "Sed eleifend convallis justo at maximus. Phasellus porta in ex et interdum." +
+                          "</li>" +
+                          "<li>" +
+                          "Curabitur consectetur tempor dapibus. Vivamus blandit ac quam id scelerisque." +
+                          "</li>" +
+                          "<li>" +
+                          "Maecenas libero dui, eleifend rutrum nisl finibus, vulputate sagittis leo. Cras porta magna " +
+                          "eu sapien rhoncus mollis sed a felis. Vivamus ut malesuada enim. Proin ac libero facilisis, " +
+                          "viverra felis eget, tempus erat." +
+                          "</li>" +
+                          "<li>" +
+                          "Morbi finibus faucibus lectus nec ullamcorper." +
+                          "</li>" +
+                          "</ul>",
+                Image = "~/images/wow-logo-navbar.png",
+                Price = 100,
+                BestSeller = true
+            };
+
+            db.Add(BestSellerLOL);
             
             db.SaveChanges();
         }

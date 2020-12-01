@@ -23,3 +23,7 @@
     border-color: #1b1b1b;
 }
 
+.review-wrapper {
+    z-index: 1;
+    position: absolute;
+}

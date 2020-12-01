@@ -2,10 +2,15 @@
 {
     public class Product
     {
-        public Product() {}
+        public Product()
+        {
+            BestSeller = false;
+        }
 
         // Unique identifier for the product 
         public int Id { get; set; }
+
+        public bool BestSeller { get; set; }
         
         // What type of product is this? WoWRetail, WoWClassic, Overwatch, LoL, CSGO
         // R1, R2, M1, M2, M3, DM1, DM2, Custom
