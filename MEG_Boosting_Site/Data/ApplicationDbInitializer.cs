@@ -398,6 +398,8 @@ namespace MEG_Boosting_Site.Data
                     CurrentTier = "I",
                     BoostedRank = "Diamond",
                     BoostedTier = "IV",
+                    Wins = 0,
+                    Duo = false,
                     Price = 10 * i,
                     ApplicationUser = admin
                 };

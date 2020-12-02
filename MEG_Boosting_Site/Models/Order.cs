@@ -20,12 +20,16 @@ namespace MEG_Boosting_Site.Models
         public string CurrentRank { get; set; }
         
         public string CurrentTier { get; set; }
-        [Required]
+        
         public string BoostedRank { get; set; }
         
         public string BoostedTier { get; set; }
         [Required]
-        public decimal Price { get; set; }
+        public double Price { get; set; }
+        
+        public int Wins { get; set; }
+        
+        public bool Duo { get; set; }
         
         // Sets date and time
         [Required, DataType(DataType.DateTime)]

@@ -94,3 +94,32 @@ h1 {
     right: 1020px;
     
 }
+#LoL_WinsBoost_Player_Server_Container{
+    position: absolute;
+    float:left;
+    padding: 10px;
+    top: 350px;
+    right: 1100px;
+}
+#LoL_WinsBoost_Player_Username{
+    position: absolute;
+    float:left;
+    padding: 10px;
+    top: 420px;
+    right: 1324px;
+}
+#LoL_WinsBoost_Player_Container{
+    position: absolute;
+    float:left;
+    padding: 10px;
+    top: 350px;
+    right: 900px;
+}
+#LoL_WinsBoost_Container
+{
+    position: fixed;
+    float:left;
+    padding: 10px;
+    top: 500px;
+    right: 90px;
+}

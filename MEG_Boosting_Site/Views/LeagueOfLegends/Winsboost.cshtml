@@ -1,17 +1,82 @@
+@model Order
+
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
+
 <link rel="stylesheet" href="~/css/lol.css" />
 <h1>Wins Boosting</h1>
-<div class="container" id="LoL_Winsboost_Container">
-    <h3>Wins boost</h3>
-    <p>How many wins do you want</p>
-    <div class="slidecontainer">
-        <input type="range" min="1" max="10" value="1" class="slider" id="winRange">
-    </div>
+<div>
+	<form asp-action="Winsboost">
+		<div class="container col-2" id="LoL_WinsBoost_Player_Server_Container">
+			<h2>Your Server</h2>
+			<div id="WinsServer">
+				<select asp-for="Server">
+					<option disabled value="">Please select one</option>
+					<option value="EUW">EUW</option>
+					<option value="EUNE">EUNE</option>
+					<option value="NA">NA</option>
+					<option value="RU">RU</option>
+					<option value="Turkey">Turkey</option>
+					<option value="JP">JP</option>
+					<option value="KR">KR</option>
+					<option value="Taiwan">Taiwan</option>
+				</select>
+			</div>
+		</div>
+		<div id="LoL_WinsBoost_Player_Username">
+			<label asp-for="Username" for="LoL_Wins_Username">Username:</label>
+			<input asp-for="Username" type="text" id="LoL_Wins_Username" name="Username">
+		</div>
+		<div class="container col-2" id="LoL_WinsBoost_Player_Container">
+			<h2>Your rank</h2>
+			<div id="PlayerRank">
+				<select v-model="playerrank" v-on:change="lolrankcheck($event)" asp-for="CurrentRank">
+					<option disabled value="">Please select one</option>
+					<option value="Iron">Iron</option>
+					<option value="Bronze">Bronze</option>
+					<option value="Silver">Silver</option>
+					<option value="Gold">Gold</option>
+					<option value="Platinum">Platinum</option>
+					<option value="Diamond">Diamond</option>
+					<option value="Master">Master</option>
+					<option value="Grandmaster">Grandmaster</option>
+					<option value="Challenger">Challenger</option>
+				</select>
+				<div>
+					<template >
+						<select v-model="playerdivision" v-if="flip" asp-for="CurrentTier">
+							<option disabled value="">Please select one</option>
+							<option>I</option>
+							<option>II</option>
+							<option>III</option>
+							<option>IV</option>
+						</select>
+					</template>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="LoL_WinsBoost_Container">
+			<h3>Wins boost</h3>
+			<p>How many wins do you want</p>
+			<div id="winsSlider">
+				<div class="slidecontainer">
+					<input asp-for="Wins" v-model="winsslide" type="range" min="1" max="15" value="1" class="slider" id="winRange">
+					<label asp-for="Duo" for="LoL_Wins_Duo">Duo Boosting</label><br>
+					<input asp-for="Duo" v-model="duoboost" type="checkbox" id="LoL_Wins_Duo" name="Duo">
+				</div>
+				<div>
+					<p>Games {{winsAmount}}</p>
+					<p>Price {{winsPrice}}€</p>
+				</div>
+			</div>
+			<div>
+				<input type="submit" value="Submit" class="btn btn-primary" id="LoL_Wins_Boost_Button">
+			</div>
+		</div>
+	</form>
 </div>
-
 @section Scripts
 {
     <script src="~/js/Lol.js" asp-append-version="true"></script>
