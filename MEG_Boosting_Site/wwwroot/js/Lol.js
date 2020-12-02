@@ -173,4 +173,33 @@ $(document).ready(function (){
             }
         },
     })
+    var winsBoost = new Vue({
+        el: '#winsSlider',
+        data:{
+            winsslide: '',
+            duoboost: false,
+            winsAmount: 0,
+            winsPrice: 0
+        },
+        watch: {
+            winsslide: function (){
+                this.winsAmount = parseInt(this.winsslide)
+                if(this.duoboost === true){
+                    this.winsPrice = this.winsAmount * 10 * 1.5
+                }
+                else{
+                    this.winsPrice = this.winsAmount * 10
+                }
+            },
+            duoboost: function (){
+                this.winsAmount = parseInt(this.winsslide)
+                if(this.duoboost === true){
+                    this.winsPrice = this.winsAmount * 10 * 1.5
+                }
+                else{
+                    this.winsPrice = this.winsAmount * 10
+                }
+            }
+        }
+    })
 })
