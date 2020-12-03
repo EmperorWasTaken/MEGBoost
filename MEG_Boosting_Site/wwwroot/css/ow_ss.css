@@ -59,3 +59,11 @@ input {
     margin-right: 10px;
     font-weight: bold;
 }
+.hide {
+    display: none;
+}
+.myDIV:hover + .hide {
+    display: block;
+    color: white;
+    
+}
