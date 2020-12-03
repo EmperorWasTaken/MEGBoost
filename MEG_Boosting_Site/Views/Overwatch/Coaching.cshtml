@@ -12,14 +12,14 @@
 <div class="content_csgo">
 	<div id="OWtest">
 		<h1>Overwatch Coaching</h1>
-		<p class="subtitle">WLet a pro guide you to victory!</p>
-		<div style="background-color: transparent; color: white; opacity: 0.7" class="input">
-			<label class="myDIV">Battle.net Username:</label>
+		<p class="subtitle">Let a pro guide you to victory!</p>
+		<div style="background-color: transparent; color: white; opacity: 0.8" class="input">
+			<label class="show">Battle.net Username:</label>
 			<label class="hide">Username#4 Digit Number</label>
 			<input asp-for="Username" type="text" id="Battlenet_Username" name="Username" class="subtitle">
 		</div>
 		<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
-			<span style="color: #787878; font-size: 18px; font-weight: 500;">Current Rank</span>
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Amount</span>
 			<span id="Coaching">
 				<select v-model="Coaching" asp-for="CurrentRank">
 					<option value="" disabled selected>Coaching</option>
