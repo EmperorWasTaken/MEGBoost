@@ -10,7 +10,7 @@ $(document).ready(function () {
             CoachingPrice: function () {
                 this.PriceTotal = parseInt(this.CoachingPrice) + parseInt(this.PlatformPrice)
             },
-            Platform: function () {
+            PlatformPrice: function () {
                 this.PriceTotal = parseInt(this.CoachingPrice) + parseInt(this.PlatformPrice)
             },
         },
@@ -71,7 +71,7 @@ $(document).ready(function () {
                         price.PlatformPrice = price.CoachingPrice * 1.2
                         break
                     default:
-                        price.CoachingPrice = 0
+                        price.PlatformPrice = 0
                 }
             }
         },
