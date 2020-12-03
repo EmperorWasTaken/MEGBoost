@@ -6,6 +6,7 @@
     z-index: 1; /* Stay on top */
     top: 125px; /* Stay at the top */
     left: 0;
+ 
     background-color:#001b44; /*Background under Sidebar
     overflow-x: hidden; /* Disable horizontal scroll */
 }
@@ -16,7 +17,7 @@
     font-size: 25px;
     display: block;
     background: #001b44;
-    color: #eeeeee;
+    color: #a8a7ac;
 }
 
 /* When you mouse over the navigation links, change their color */

@@ -67,8 +67,10 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 1px;
+  background-image: linear-gradient(#001b44, #000000);
+  background-size: cover;
+  color: #a8a7ac;
+  font-family: Roboto, sans-serif;
 }
 .footer {
   position: absolute;
@@ -86,7 +88,7 @@ body {
 }
 /* Style page content */
 .main {
-  margin-left: 180px; /* Same as the width of the sidebar */
+  position: center;
   padding: 150px 10px;
 }
 
@@ -104,4 +106,24 @@ body {
   width: 25%;
   position: center;
   text-align: center;
+}
+
+#home-review-child {
+  border: solid;
+  border-color: #1b1b1b;
+  margin: 1px;
+}
+
+#home-index-information-bottom {
+  width: 25%;
+  position: center;
+  text-align: center;
+}
+
+#home-index-information-bottom-child {
+  width: 25%;
+}
+
+hr {
+  border-top: 3px solid black;
 }
