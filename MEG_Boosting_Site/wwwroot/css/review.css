@@ -5,7 +5,7 @@
 }
 
 .float-child {
-    width: 33%;
+    width: 100%;
     float: left;
     padding: 20px;
     border: solid;
@@ -25,5 +25,4 @@
 
 .review-wrapper {
     z-index: 1;
-    position: absolute;
 }

@@ -67,11 +67,8 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 1px;
   background-image: linear-gradient(#001b44, #000000);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   color: #a8a7ac;
   font-family: Roboto, sans-serif;
 }
