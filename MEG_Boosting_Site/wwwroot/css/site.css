@@ -69,6 +69,11 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 1px;
+  background-image: linear-gradient(#001b44, #000000);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #a8a7ac;
+  font-family: Roboto, sans-serif;
 }
 .footer {
   position: absolute;
@@ -110,4 +115,18 @@ body {
   border: solid;
   border-color: #1b1b1b;
   margin: 1px;
+}
+
+#home-index-information-bottom {
+  width: 25%;
+  position: center;
+  text-align: center;
+}
+
+#home-index-information-bottom-child {
+  width: 25%;
+}
+
+hr {
+  border-top: 3px solid black;
 }

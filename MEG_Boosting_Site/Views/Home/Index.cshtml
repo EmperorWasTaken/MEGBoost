@@ -23,8 +23,10 @@
     fermentum sollicitudin quis tempus lorem. Donec sapien velit, euismod
     eu dolor sed, facilisis congue lectus.
 </p>
+
+<hr>
     
-<div class="container-fluid">
+<div class="container-fluid" id="home-index-topreview-container">
     @foreach (var review in Model.Reviews)
     {
         <partial name="_HomeTopReviewPartial" model="review"/>
@@ -47,9 +49,28 @@
     eu dolor sed, facilisis congue lectus.
 </p>
 
+<hr>
+
 <partial name="_SocialMediaPartial" />
 
 <p class="text-center" id="home-socialmedia-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Vestibulum lectus nisl, bibendum dignissim molestie et, faucibus eu sem.
 </p>
+
+<hr>
+
+<div class="container-fluid" id="home-index-information-bottom">
+    <div class="float-child" id="home-index-information-bottom-child">
+        <a asp-controller="Home" asp-action="FAQ">F.A.Q</a>
+    </div>
+    <div class="float-child" id="home-index-information-bottom-child">
+        <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+    <div class="float-child" id="home-index-information-bottom-child">
+        <a asp-controller="Home" asp-action="About">About</a>
+    </div>
+    <div class="float-child" id="home-index-information-bottom-child">
+        <a asp-controller="Home" asp-action="Contact">Contact</a>
+    </div>
+</div>
