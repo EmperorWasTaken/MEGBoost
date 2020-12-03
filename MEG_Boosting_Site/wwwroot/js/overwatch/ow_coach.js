@@ -3,21 +3,21 @@ $(document).ready(function () {
         el: '#total_price',
         data: {
             CoachingPrice: 0,
-            Platform: 0,
+            PlatformPrice: 0,
             PriceTotal: 0
         },
         watch: {
             CoachingPrice: function () {
-                this.PriceTotal = this.Coaching + this.PlatformPrice
+                this.PriceTotal = parseInt(this.CoachingPrice) + parseInt(this.PlatformPrice)
             },
             Platform: function () {
-                this.PriceTotal = this.CoachingPrice + this.PlatformPrice
+                this.PriceTotal = parseInt(this.CoachingPrice) + parseInt(this.PlatformPrice)
             },
         },
         
     })
     var Coaching = new Vue({
-        el: '#ACoach',
+        el: '#Coaching',
         data: {
             Coaching: '',
         },
@@ -75,5 +75,5 @@ $(document).ready(function () {
                 }
             }
         },
-
-    })}
+    })
+})
