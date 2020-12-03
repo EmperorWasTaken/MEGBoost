@@ -10,42 +10,44 @@
 
 
 <div class="content_csgo">
-	<h1>Overwatch Coaching</h1>
-	<p class="subtitle">WLet a pro guide you to victory!</p>
-	<div style="background-color: transparent; color: white; opacity: 0.7" class="input">
-		<label class="myDIV">Battle.net Username:</label>
-		<label class="hide">Username#4 Digit Number</label>
-		<input asp-for="Username" type="text" id="ESEA_Username" name="Username" class="subtitle">
-	</div>
-	<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
-		<span style="color: #787878; font-size: 18px; font-weight: 500;">Current Rank</span>
-		<span id="">
-			<select v-model="crank" v-on:change="ow_rank_check($event)" asp-for="CurrentRank">
-				<option value="" disabled selected>Coaching</option>
-				<option value="1">1 hour</option>
-				<option value="2">2 hours</option>
-				<option value="3">5 hours</option>
-				<option value="4">10 hours</option>
-				<option value="5">25 hours</option>
-				<option value="6">50 hours</option>
-				<option value="7">100 hours</option>
-			</select>
-		</span>
-		<span style="color: #787878; font-size: 18px; font-weight: 500;">Platform</span>
-		<span>
-			<select v-model="owplatform" v-on:change="ow_role_check($event)">
-				<option value="" disabled selected>Choose your platform</option>
-				<option value="1">PC</option>
-				<option value="2">Xbox Series X</option>
-				<option value="3">Playstation 5</option>
-			</select>
-		</span>
-	</div>
-	<div id="total_price" style="color: white; opacity: 0.8; font-size: 16px">
-		<p style="font-size: larger">Subtotal: {{price_total}}€</p>
-	</div>
-	<div>
-		<input type="submit" value="Submit" class="btn btn-dark" id="">
+	<div id="OWtest">
+		<h1>Overwatch Coaching</h1>
+		<p class="subtitle">WLet a pro guide you to victory!</p>
+		<div style="background-color: transparent; color: white; opacity: 0.7" class="input">
+			<label class="myDIV">Battle.net Username:</label>
+			<label class="hide">Username#4 Digit Number</label>
+			<input asp-for="Username" type="text" id="Battlenet_Username" name="Username" class="subtitle">
+		</div>
+		<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Current Rank</span>
+			<span id="Coaching">
+				<select v-model="Coaching" asp-for="CurrentRank">
+					<option value="" disabled selected>Coaching</option>
+					<option value="1">1 hour</option>
+					<option value="2">2 hours</option>
+					<option value="3">5 hours</option>
+					<option value="4">10 hours</option>
+					<option value="5">25 hours</option>
+					<option value="6">50 hours</option>
+					<option value="7">100 hours</option>
+				</select>
+			</span>
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Platform</span>
+			<span id="Platform">
+				<select v-model="Platform">
+					<option value="" disabled selected>Choose your platform</option>
+					<option value="1">PC</option>
+					<option value="2">Xbox Series X</option>
+					<option value="3">Playstation 5</option>
+				</select>
+			</span>
+		</div>
+		<div id="total_price" style="color: white; opacity: 0.8; font-size: 16px">
+			<p style="font-size: larger">Subtotal: {{PriceTotal}}€</p>
+		</div>
+		<div>
+			<input type="submit" value="Submit" class="btn btn-dark" id="">
+		</div>
 	</div>
 </div>
 
