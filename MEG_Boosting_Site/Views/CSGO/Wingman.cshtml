@@ -18,8 +18,8 @@
 	</div>
 	<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
 		<span style="color: #787878; font-size: 18px; font-weight: 500;">Current Rank</span>
-		<span id="">
-			<select v-model="current_rank" v-on:change="csgo_rank_check($event)" asp-for="CurrentRank">
+		<span id="Competitive">
+			<select v-model="Competitive" v-on:change="csgo_rank_check($event)" asp-for="CurrentRank">
 				<option value="" disabled selected>Choose your current rank</option>
 				<option value="1">Silver I</option>
 				<option value="2">Silver II</option>
@@ -42,8 +42,8 @@
 			</select>
 		</span>
 		<span style="color: #787878; font-size: 18px; font-weight: 500;">Desired Rank</span>
-		<span id="BoostRank">
-			<select v-model="current_rank" v-on:change="csgo_rank_check($event)" asp-for="CurrentRank">
+		<span id="Competitive2">
+			<select v-model="Competitive2" v-on:change="csgo_rank_check($event)" asp-for="CurrentRank">
 				<option value="" disabled selected>Choose your desired rank</option>
 				<option value="1">Silver I</option>
 				<option value="2">Silver II</option>
@@ -67,7 +67,7 @@
 		</span>
 	</div>
 	<div id="total_price" style="color: white; opacity: 0.8; font-size: 16px">
-		<p style="font-size: larger">Subtotal: {{price_total}}€</p>
+		<p style="font-size: larger">Subtotal: {{PriceTotal}}€</p>
 	</div>
 	<div>
 		<input type="submit" value="Submit" class="btn btn-dark" id="">

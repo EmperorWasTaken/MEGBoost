@@ -19,8 +19,8 @@
 	</div>
 	<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
 		<span style="color: #787878; font-size: 18px; font-weight: 500;">Current Rank</span>
-		<span id="">
-			<select v-model="crank" v-on:change="ow_rank_check($event)" asp-for="CurrentRank">
+		<span id="Competitive">
+			<select v-model="Competitive" asp-for="CurrentRank">
 				<option value="" disabled selected>Choose your current rank</option>
 				<option value="1">Bronze</option>
 				<option value="2">Silver</option>
@@ -32,8 +32,8 @@
 			</select>
 		</span>
 		<span style="color: #787878; font-size: 18px; font-weight: 500;">Desired Rank</span>
-		<span id="BoostRank">
-			<select v-model="drank" v-on:change="ow_rank_check($event)" asp-for="BoostedRank">
+		<span id="Competitive2">
+			<select v-model="Competitive2" asp-for="BoostedRank">
 				<option value="" disabled selected>Choose your desired rank</option>
 				<option value="1">Bronze</option>
 				<option value="2">Silver</option>
@@ -45,8 +45,8 @@
 			</select>
 		</span>
 		<span style="color: #787878; font-size: 18px; font-weight: 500;">Role</span>
-		<span>
-			<select v-model="owrole" v-on:change="ow_role_check($event)">
+		<span id="Role">
+			<select v-model="Role">
 				<option value="" disabled selected>Choose your role</option>
 				<option value="1">Tank</option>
 				<option value="2">Support</option>
@@ -55,8 +55,8 @@
 			</select>
 		</span>
 		<span style="color: #787878; font-size: 18px; font-weight: 500;">Platform</span>
-		<span>
-			<select v-model="owplatform" v-on:change="ow_platform_check($event)">
+		<span id="Platform">
+			<select v-model="Platform">
 				<option value="" disabled selected>Choose your platform</option>
 				<option value="1">PC</option>
 				<option value="2">Xbox Series X</option>
@@ -65,7 +65,7 @@
 		</span>
 	</div>
 	<div id="total_price" style="color: white; opacity: 0.8; font-size: 16px">
-		<p style="font-size: larger">Subtotal: {{price_total}}€</p>
+		<p style="font-size: larger">Subtotal: {{PriceTotal}}€</p>
 	</div>
 	<div>
 		<input type="submit" value="Submit" class="btn btn-dark" id="">
