@@ -2,13 +2,38 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container-fluid">
+
+<link rel="stylesheet" href="slick/slick.css"/>
+<link rel="stylesheet" href="slick/slick-theme.css"/>
+<link rel="stylesheet" href="css/sliders.css"/>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<div class="responsive">
+    <div class="slider_bg1"> Hei</div>
+    <div class="slider_bg2"> Hallo</div>
+    <div class="slider_bg1"> Guten Tag</div>
+    <div class="slider_bg2"> God aften</div>
+    <div class="slider_bg1"> Lol</div>
+</div>
+
+
+<div class="responsive">
     @foreach (var product in Model.Products)
     {
         <partial name="_HomeBestsellersPartial" model="product"/>
     }
-</div>
+    </div>
 
+
+
+
+
+<br>
+<br>
+<br>
 <p class="text-center" id="home-bestseller-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Vestibulum lectus nisl, bibendum dignissim molestie et, faucibus eu sem.
@@ -74,3 +99,10 @@
         <a asp-controller="Home" asp-action="Contact">Contact</a>
     </div>
 </div>
+
+@section Scripts
+{
+    <script src="~/slick/slick.min.js" asp-append-version="true"></script>
+    <script src="~/slick/slick.js" asp-append-version="true"></script>
+    <script src="~/js/carousel.js" asp-append-version="true"></script>
+}

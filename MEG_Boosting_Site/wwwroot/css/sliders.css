@@ -1,0 +1,22 @@
+.slider_bg1 {
+    background-image: url(../images/sliderbackground1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 75px;
+    border: 5px;
+}
+
+.slider_bg2 {
+    background-image: url(../images/sliderbackground2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 75px;
+    border: 5px;
+}
+
+.responsive {
+    height: 100%;
+    width: 100%;
+}
