@@ -17,7 +17,7 @@ namespace MEG_Boosting_Site.Models
         public int Id { get; set; }
         
         // A name for the specific service, for example: WoWRetailGladiator
-        [Required, StringLength(50), DisplayName("Name")]
+        [Required, StringLength(50), DisplayName("Email")]
         public string Name { get; set; }
         
         // Details about the service
