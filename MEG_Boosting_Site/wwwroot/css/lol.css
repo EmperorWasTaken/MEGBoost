@@ -6,7 +6,9 @@
     text-decoration:none;
     list-style-type:none;
     -webkit-font-smoothing:antialiased;
-    font-family:'Roboto', sans-serif
+    font-family:'Roboto', sans-serif;
+    color: #510202;
+    font-weight: bold;
 }
 body {
     background-image: url(../images/lolback.jpeg);
@@ -15,7 +17,7 @@ body {
 }
 h1 {
     text-align: center;
-    color: pink;
+    color: green;
 }
 
 #winCont{
@@ -84,7 +86,7 @@ h1 {
     top: 490px;
     right: 900px;
 }
-#PrisTest{
+#LoLPris{
     color: green;
     font-size: 34px;
     position: absolute;

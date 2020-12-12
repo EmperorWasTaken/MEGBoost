@@ -150,7 +150,7 @@ $(document).ready(function (){
         }
     })
     var pris = new Vue({
-        el: '#PrisTest',
+        el: '#LoLPris',
         data:{
             PlayerRankPris: 0,
             BoostRankPris: 0,

@@ -1,0 +1,12 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    border-spacing:0;
+    text-decoration:none;
+    list-style-type:none;
+    -webkit-font-smoothing:antialiased;
+    font-family:'Roboto', sans-serif;
+    color: #510202;
+    font-weight: bold;
+}
