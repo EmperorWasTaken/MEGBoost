@@ -8,13 +8,10 @@ $(document).ready(function () {
         },
         watch: {
             CompPrice: function () {
-                this.PriceTotal = parseInt(this.CompPrice) + parseInt(this.Comp2Price)
+                this.PriceTotal = this.CompPrice + this.Comp2Price
             },
             Comp2Price: function () {
-                this.PriceTotal = parseInt(this.CompPrice) + parseInt(this.Comp2Price)
-            },
-            PlatformPrice: function () {
-                this.PriceTotal = parseInt(this.CompPrice) + parseInt(this.Comp2Price)
+                this.PriceTotal = this.CompPrice + this.Comp2Price
             },
         },
 
@@ -28,43 +25,43 @@ $(document).ready(function () {
             Competitive: function (){
                 switch (this.Competitive){
                     case "1":
-                        price.Comp2Price = 20
+                        price.CompPrice = 200
                         break
                     case "2":
-                        price.Comp2Price = 35
+                        price.CompPrice = 190
                         break
                     case "3":
-                        price.Comp2Price = 65
+                        price.CompPrice = 180
                         break
                     case "4":
-                        price.Comp2Price = 140
+                        price.CompPrice = 170
                         break
                     case "5":
-                        price.Comp2Price = 265
+                        price.CompPrice = 160
                         break
                     case "6":
-                        price.Comp2Price = 510
+                        price.CompPrice = 150
                         break
                     case "7":
-                        price.Comp2Price = 975
+                        price.CompPrice = 140
                         break
                     case "8":
-                        price.Comp2Price = 35
+                        price.CompPrice = 130
                         break
                     case "9":
-                        price.Comp2Price = 65
+                        price.CompPrice = 120
                         break
                     case "10":
-                        price.Comp2Price = 140
+                        price.CompPrice = 110
                         break
                     case "11":
-                        price.Comp2Price = 265
+                        price.CompPrice = 100
                         break
                     case "12":
-                        price.Comp2Price = 510
+                        price.CompPrice = 60
                         break
                     case "13":
-                        price.Comp2Price = 975
+                        price.CompPrice = 50
                         break
                     default:
                         price.CompPrice = 0
@@ -83,46 +80,46 @@ $(document).ready(function () {
             Competitive2: function (){
                 switch (this.Competitive2){
                     case "1":
-                        price.Comp2Price = 20
+                        price.Comp2Price = 10
                         break
                     case "2":
-                        price.Comp2Price = 35
+                        price.Comp2Price = 20
                         break
                     case "3":
-                        price.Comp2Price = 65
+                        price.Comp2Price = 30
                         break
                     case "4":
-                        price.Comp2Price = 140
+                        price.Comp2Price = 40
                         break
                     case "5":
-                        price.Comp2Price = 265
+                        price.Comp2Price = 50
                         break
                     case "6":
-                        price.Comp2Price = 510
+                        price.Comp2Price = 50
                         break
                     case "7":
-                        price.Comp2Price = 975
+                        price.Comp2Price = 100
                         break
                     case "8":
-                        price.Comp2Price = 35
+                        price.Comp2Price = 150
                         break
                     case "9":
-                        price.Comp2Price = 65
+                        price.Comp2Price = 200
                         break
                     case "10":
-                        price.Comp2Price = 140
+                        price.Comp2Price = 250
                         break
                     case "11":
-                        price.Comp2Price = 265
+                        price.Comp2Price = 300
                         break
                     case "12":
-                        price.Comp2Price = 510
+                        price.Comp2Price = 350
                         break
                     case "13":
-                        price.Comp2Price = 975
+                        price.Comp2Price = 400
                         break
                     default:
-                        price.CompPrice = 0
+
                 }
             }
         },

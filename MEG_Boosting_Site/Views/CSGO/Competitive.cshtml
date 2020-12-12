@@ -19,7 +19,7 @@
 	<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
 		<span style="color: #787878; font-size: 18px; font-weight: 500;">Current Rank</span>
 		<span id="Competitive">
-			<select v-model="Competitive" v-on:change="csgo_rank_check($event)" asp-for="CurrentRank">
+			<select v-model="Competitive" asp-for="CurrentRank">
 				<option value="" disabled selected>Choose your current rank</option>
 				<option value="1">Silver I</option>
 				<option value="2">Silver II</option>
