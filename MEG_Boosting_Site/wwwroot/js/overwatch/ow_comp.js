@@ -3,19 +3,29 @@ $(document).ready(function () {
         el: '#total_price',
         data: {
             CompPrice: 0,
-            PlatformPrice: 0,
-            RolePrice: 0,
+            Comp2Price: 0,
+            PlatformPrice: 1,
+            RolePrice: 1,
             PriceTotal: 0
         },
         watch: {
-            CoachingPrice: function () {
-                this.PriceTotal = parseInt(this.CompPrice) + parseInt(this.PlatformPrice) + parseInt(this.RolePrice)
+            CompPrice: function () {
+                this.PriceTotal = this.CompPrice + this.Comp2Price * this.PlatformPrice * this.RolePrice
+                this.PriceTotal = Math.round(this.PriceTotal)
+            },
+            Comp2Price: function () {
+                this.PriceTotal = this.CompPrice + this.Comp2Price * this.PlatformPrice * this.RolePrice
+                this.PriceTotal = Math.round(this.PriceTotal)
             },
             PlatformPrice: function () {
-                this.PriceTotal = parseInt(this.CompPrice) + parseInt(this.PlatformPrice) + parseInt(this.RolePrice)
+                this.PriceTotal = this.CompPrice + this.Comp2Price * this.PlatformPrice * this.RolePrice
+                this.PriceTotal = Math.round(this.PriceTotal)
             },
+            RolePrice: function () {
+                this.PriceTotal = this.CompPrice + this.Comp2Price * this.PlatformPrice * this.RolePrice
+                this.PriceTotal = Math.round(this.PriceTotal)
+            }
         },
-
     })
     var Competitive = new Vue({
         el: '#Competitive',
@@ -26,25 +36,25 @@ $(document).ready(function () {
             Competitive: function (){
                 switch (this.Competitive){
                     case "1":
-                        price.CompPrice = 20
+                        price.CompPrice = 100
                         break
                     case "2":
-                        price.CompPrice = 35
+                        price.CompPrice = 90
                         break
                     case "3":
-                        price.CompPrice = 65
+                        price.CompPrice = 80
                         break
                     case "4":
-                        price.CompPrice = 140
+                        price.CompPrice = 70
                         break
                     case "5":
-                        price.CompPrice = 265
+                        price.CompPrice = 40
                         break
                     case "6":
-                        price.CompPrice = 510
+                        price.CompPrice = 30
                         break
                     case "7":
-                        price.CompPrice = 975
+                        price.CompPrice = 20
                         break
                     default:
                         price.CompPrice = 0
@@ -100,16 +110,19 @@ $(document).ready(function () {
             Platform: function (){
                 switch (this.Platform){
                     case "1":
-                        price.PlatformPrice = price.CompPrice
+                        price.PlatformPrice = 1
+                        PlatformName.formName = 'Bnet'
                         break
                     case "2":
-                        price.PlatformPrice = price.CompPrice * 1.2
+                        price.PlatformPrice = 1.2
+                        PlatformName.formName = 'Xbox'
                         break
                     case "3":
-                        price.PlatformPrice = price.CompPrice * 1.2
+                        price.PlatformPrice = 1.2
+                        PlatformName.formName = 'PSN'
                         break
                     default:
-                        price.PlatformPrice = 0
+                        price.PlatformPrice = 1
                 }
             }
         },
@@ -123,18 +136,45 @@ $(document).ready(function () {
             Role: function (){
                 switch (this.Role){
                     case "1":
-                        price.RolePrice = price.CompPrice
+                        price.RolePrice = 1
                         break
                     case "2":
-                        price.RolePrice = price.CompPrice
+                        price.RolePrice = 1
                         break
                     case "3":
-                        price.RolePrice = price.CompPrice * 1.2
+                        price.RolePrice = 1.2
+                        break
+                    case "4":
+                        price.RolePrice = 0.8
                         break
                     default:
-                        price.RolePrice = 0
+                        price.RolePrice = 1
                 }
             }
         },
+    })
+    var PlatformName = new Vue({
+        el: '#Platformname',
+        data:{
+            formName:'',
+            platname:'Battle.net Username:'
+        },
+        watch:{
+            formName: function (){
+                switch (this.formName){
+                    case "Bnet":
+                        this.platname = 'Battle.net Username:'
+                        break
+                    case "PSN":
+                        this.platname = 'PSN Username:'
+                        break
+                    case "Xbox":
+                        this.platname = 'Xbox Username:'
+                        break
+                    default:
+                        this.platname = 'Battle.net Username:'
+                }
+            },
+        }
     })
 })
