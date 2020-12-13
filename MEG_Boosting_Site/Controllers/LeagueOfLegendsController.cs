@@ -167,7 +167,7 @@ namespace MEG_Boosting_Site.Controllers
                 }
 
                 order.Price = playerRankPrice + boostRankPrice - playerTierPrice + boostTierPrice;
-                
+                order.description =order.Server + order.CurrentRank + order.CurrentTier + " " + order.BoostedRank + order.BoostedTier;
                 
 
                 order.ApplicationUser = user;

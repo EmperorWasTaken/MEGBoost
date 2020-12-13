@@ -36,6 +36,8 @@ namespace MEG_Boosting_Site.Models
         public string Time { get; set; }
         
         public ApplicationUser ApplicationUser { get; set; }
+        
+        public string description { get; set; }
     }
     
     
