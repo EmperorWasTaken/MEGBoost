@@ -167,7 +167,7 @@ namespace MEG_Boosting_Site.Controllers
                 }
 
                 order.Price = playerRankPrice + boostRankPrice - playerTierPrice + boostTierPrice;
-                order.description =order.Server + order.CurrentRank + order.CurrentTier + " " + order.BoostedRank + order.BoostedTier;
+                order.Description = "From " + order.CurrentRank + " " + order.CurrentTier + " to " + order.BoostedRank + " " + order.BoostedTier + " on " + order.Server ;
                 
 
                 order.ApplicationUser = user;
@@ -194,12 +194,15 @@ namespace MEG_Boosting_Site.Controllers
                 if (order.Duo)
                 {
                     order.Price = order.Wins * 10 * 1.5;
+                    order.Description = order.Wins + " Wins " + " as Duo " + " on " + order.Server;
                 }
                 else
                 {
                     order.Price = order.Wins * 10;
+                    order.Description = order.Wins + " Wins" + " on " + order.Server;
                 }
 
+                
                 order.ApplicationUser = user;
                 _db.Add(order);
                 await _db.SaveChangesAsync();
