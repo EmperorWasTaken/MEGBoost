@@ -10,52 +10,54 @@
 
 
 <div class="content_csgo">
-	<h1>Faceit Boosting</h1>
-	<p class="subtitle">Now you can become a Level 10 legend too!</p>
-	<div style="background-color: transparent; color: white; opacity: 0.7" class="input">
-		<label>Faceit Username:</label>
-		<input asp-for="Username" type="text" id="ESEA_Username" name="Username" class="subtitle">
-	</div>
-	<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
-		<span style="color: #787878; font-size: 18px; font-weight: 500;">Current Rank</span>
-		<span id="Competitive">
-			<select v-model="Competitive" v-on:change="csgo_rank_check($event)" asp-for="CurrentRank">
-				<option value="" disabled selected>Choose your current rank</option>
-				<option value="1">Level 1</option>
-				<option value="2">Level 2</option>
-				<option value="3">Level 3</option>
-				<option value="4">Level 4</option>
-				<option value="5">Level 5</option>
-				<option value="6">Level 6</option>
-				<option value="7">Level 7</option>
-				<option value="8">Level 8</option>
-				<option value="9">Level 9</option>
-				<option value="10">Level 10</option>
-			</select>
-		</span>
-		<span style="color: #787878; font-size: 18px; font-weight: 500;">Desired Rank</span>
-		<span id="Competitive2">
-			<select v-model="Competitive2" v-on:change="csgo_rank_check($event)" asp-for="CurrentRank">
-				<option value="" disabled selected>Choose your desired rank</option>
-				<option value="1">Level 1</option>
-				<option value="2">Level 2</option>
-				<option value="3">Level 3</option>
-				<option value="4">Level 4</option>
-				<option value="5">Level 5</option>
-				<option value="6">Level 6</option>
-				<option value="7">Level 7</option>
-				<option value="8">Level 8</option>
-				<option value="9">Level 9</option>
-				<option value="10">Level 10</option>
-			</select>
-		</span>
-	</div>
-	<div id="total_price" style="color: white; opacity: 0.8; font-size: 16px">
-		<p style="font-size: larger">Subtotal: {{PriceTotal}}€</p>
-	</div>
-	<div>
-		<input type="submit" value="Submit" class="btn btn-dark" id="">
-	</div>
+	<form asp-action="Faceit">
+		<h1>Faceit Boosting</h1>
+		<p class="subtitle">Now you can become a Level 10 legend too!</p>
+		<div style="background-color: transparent; color: white; opacity: 0.7" class="input">
+			<label>Faceit Username:</label>
+			<input asp-for="Username" type="text" id="ESEA_Username" name="Username" class="subtitle">
+		</div>
+		<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Current Rank</span>
+			<span id="Competitive">
+				<select v-model="Competitive" v-on:change="csgo_rank_check($event)" asp-for="CurrentRank">
+					<option value="" disabled selected>Choose your current rank</option>
+					<option value="1">Level 1</option>
+					<option value="2">Level 2</option>
+					<option value="3">Level 3</option>
+					<option value="4">Level 4</option>
+					<option value="5">Level 5</option>
+					<option value="6">Level 6</option>
+					<option value="7">Level 7</option>
+					<option value="8">Level 8</option>
+					<option value="9">Level 9</option>
+					<option value="10">Level 10</option>
+				</select>
+			</span>
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Desired Rank</span>
+			<span id="Competitive2">
+				<select v-model="Competitive2" v-on:change="csgo_rank_check($event)" asp-for="BoostedRank">
+					<option value="" disabled selected>Choose your desired rank</option>
+					<option value="1">Level 1</option>
+					<option value="2">Level 2</option>
+					<option value="3">Level 3</option>
+					<option value="4">Level 4</option>
+					<option value="5">Level 5</option>
+					<option value="6">Level 6</option>
+					<option value="7">Level 7</option>
+					<option value="8">Level 8</option>
+					<option value="9">Level 9</option>
+					<option value="10">Level 10</option>
+				</select>
+			</span>
+		</div>
+		<div id="total_price" style="color: white; opacity: 0.8; font-size: 16px">
+			<p style="font-size: larger">Subtotal: {{PriceTotal}}€</p>
+		</div>
+		<div>
+			<input type="submit" value="Submit" class="btn btn-dark" id="">
+		</div>
+	</form>
 </div>
 
 @section Scripts

@@ -10,41 +10,43 @@
 
 
 <div class="content_csgo">
-	<h1>Level Boosting</h1>
-	<p class="subtitle">We can get you to any level you want!</p>
-	<div style="background-color: transparent; color: white; opacity: 0.7" class="input" id="Platformname">
-		<label class="show">{{platname}}</label>
-		<label class="hide">Username#4 Digit Number</label>
-		<input asp-for="Username" type="text" id="ESEA_Username" name="Username" class="subtitle">
-	</div>
-	<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
-		<span style="color: #787878; font-size: 18px; font-weight: 500;">Amount</span>
-		<span id="Leveling">
-			<select v-model="Leveling" asp-for="CurrentRank">
-				<option value="" disabled selected>Levels</option>
-				<option value="1">1-10 Levels</option>
-				<option value="2">20-30 Levels</option>
-				<option value="3">30-50 Levels</option>
-				<option value="4">50-75 Levels</option>
-				<option value="5">75 - 100 Levels</option>
-			</select>
-		</span>
-		<span style="color: #787878; font-size: 18px; font-weight: 500;">Platform</span>
-		<span id="Platform">
-			<select v-model="Platform">
-				<option value="" disabled selected>Choose your platform</option>
-				<option value="1">PC</option>
-				<option value="2">Xbox Series X</option>
-				<option value="3">Playstation 5</option>
-			</select>
-		</span>
-	</div>
-	<div id="total_price" style="color: white; opacity: 0.8; font-size: 16px">
-		<p style="font-size: larger">Subtotal: {{PriceTotal}}€</p>
-	</div>
-	<div>
-		<input type="submit" value="Submit" class="btn btn-dark" id="">
-	</div>
+	<form asp-action="Levling">
+		<h1>Level Boosting</h1>
+		<p class="subtitle">We can get you to any level you want!</p>
+		<div style="background-color: transparent; color: white; opacity: 0.7" class="input" id="Platformname">
+			<label class="show">{{platname}}</label>
+			<label class="hide">Username#4 Digit Number</label>
+			<input asp-for="Username" type="text" id="ESEA_Username" name="Username" class="subtitle">
+		</div>
+		<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Amount</span>
+			<span id="Leveling">
+				<select v-model="Leveling" asp-for="CurrentRank">
+					<option value="" disabled selected>Levels</option>
+					<option value="1">1-10 Levels</option>
+					<option value="2">20-30 Levels</option>
+					<option value="3">30-50 Levels</option>
+					<option value="4">50-75 Levels</option>
+					<option value="5">75-100 Levels</option>
+				</select>
+			</span>
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Platform</span>
+			<span id="Platform">
+				<select v-model="Platform" asp-for="Platform">
+					<option value="" disabled selected>Choose your platform</option>
+					<option value="1">PC</option>
+					<option value="2">Xbox Series X</option>
+					<option value="3">Playstation 5</option>
+				</select>
+			</span>
+		</div>
+		<div id="total_price" style="color: white; opacity: 0.8; font-size: 16px">
+			<p style="font-size: larger">Subtotal: {{PriceTotal}}€</p>
+		</div>
+		<div>
+			<input type="submit" value="Submit" class="btn btn-dark" id="">
+		</div>
+	</form>
 </div>
 
 @section Scripts

@@ -14,7 +14,7 @@ namespace MEG_Boosting_Site.Models
         public int Id { get; set; }
         [Required]
         public string Username { get; set; }
-        [Required]
+        
         public string Server { get; set; }
         [Required]
         public string CurrentRank { get; set; }
@@ -37,7 +37,9 @@ namespace MEG_Boosting_Site.Models
         
         public ApplicationUser ApplicationUser { get; set; }
         
-        public string description { get; set; }
+        public string Description { get; set; }
+        
+        public string Platform { get; set; }
     }
     
     

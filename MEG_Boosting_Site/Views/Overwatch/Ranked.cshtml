@@ -10,66 +10,68 @@
 
 
 <div class="content_csgo">
-	<h1>Overwatch Boosting</h1>
-	<p class="subtitle">Wide selection of boosts to choose from!</p>
-	<div style="background-color: transparent; color: white; opacity: 0.7" class="input" id="Platformname">
-		<label class="myDIV">{{platname}}</label>
-		<label class="hide">Username#4 Digit Number</label>
-		<input asp-for="Username" type="text" id="ESEA_Username" name="Username" class="subtitle">
-	</div>
-	<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
-		<span style="color: #787878; font-size: 18px; font-weight: 500;">Current Rank</span>
-		<span id="Competitive">
-			<select v-model="Competitive" asp-for="CurrentRank">
-				<option value="" disabled selected>Choose your current rank</option>
-				<option value="1">Bronze</option>
-				<option value="2">Silver</option>
-				<option value="3">Gold</option>
-				<option value="4">Platinum</option>
-				<option value="5">Diamond</option>
-				<option value="6">Master</option>
-				<option value="7">Grandmaster</option>
-			</select>
-		</span>
-		<span style="color: #787878; font-size: 18px; font-weight: 500;">Desired Rank</span>
-		<span id="Competitive2">
-			<select v-model="Competitive2" asp-for="BoostedRank">
-				<option value="" disabled selected>Choose your desired rank</option>
-				<option value="1">Bronze</option>
-				<option value="2">Silver</option>
-				<option value="3">Gold</option>
-				<option value="4">Platinum</option>
-				<option value="5">Diamond</option>
-				<option value="6">Master</option>
-				<option value="7">Grandmaster</option>
-			</select>
-		</span>
-		<span style="color: #787878; font-size: 18px; font-weight: 500;">Role</span>
-		<span id="Role">
-			<select v-model="Role">
-				<option value="" disabled selected>Choose your role</option>
-				<option value="1">Tank</option>
-				<option value="2">Support</option>
-				<option value="3">DPS</option>
-				<option value="4">Open Queue</option>
-			</select>
-		</span>
-		<span style="color: #787878; font-size: 18px; font-weight: 500;">Platform</span>
-		<span id="Platform">
-			<select v-model="Platform">
-				<option value="" disabled selected>Choose your platform</option>
-				<option value="1">PC</option>
-				<option value="2">Xbox Series X</option>
-				<option value="3">Playstation 5</option>
-			</select>
-		</span>
-	</div>
-	<div id="total_price" style="color: white; opacity: 0.8; font-size: 16px">
-		<p style="font-size: larger">Subtotal: {{PriceTotal}}€</p>
-	</div>
-	<div>
-		<input type="submit" value="Submit" class="btn btn-dark" id="">
-	</div>
+	<form asp-action="Ranked">
+		<h1>Overwatch Boosting</h1>
+		<p class="subtitle">Wide selection of boosts to choose from!</p>
+		<div style="background-color: transparent; color: white; opacity: 0.7" class="input" id="Platformname">
+			<label class="myDIV">{{platname}}</label>
+			<label class="hide">Username#4 Digit Number</label>
+			<input asp-for="Username" type="text" id="ESEA_Username" name="Username" class="subtitle">
+		</div>
+		<div class="col-md-2" style="display: block; width: 70%; padding: 10px; margin-top :20px; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Current Rank</span>
+			<span id="Competitive">
+				<select v-model="Competitive" asp-for="CurrentRank">
+					<option value="" disabled selected>Choose your current rank</option>
+					<option value="1">Bronze</option>
+					<option value="2">Silver</option>
+					<option value="3">Gold</option>
+					<option value="4">Platinum</option>
+					<option value="5">Diamond</option>
+					<option value="6">Master</option>
+					<option value="7">Grandmaster</option>
+				</select>
+			</span>
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Desired Rank</span>
+			<span id="Competitive2">
+				<select v-model="Competitive2" asp-for="BoostedRank">
+					<option value="" disabled selected>Choose your desired rank</option>
+					<option value="1">Bronze</option>
+					<option value="2">Silver</option>
+					<option value="3">Gold</option>
+					<option value="4">Platinum</option>
+					<option value="5">Diamond</option>
+					<option value="6">Master</option>
+					<option value="7">Grandmaster</option>
+				</select>
+			</span>
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Role</span>
+			<span id="Role">
+				<select v-model="Role" asp-for="BoostedTier">
+					<option value="" disabled selected>Choose your role</option>
+					<option value="1">Tank</option>
+					<option value="2">Support</option>
+					<option value="3">DPS</option>
+					<option value="4">Open Queue</option>
+				</select>
+			</span>
+			<span style="color: #787878; font-size: 18px; font-weight: 500;">Platform</span>
+			<span id="Platform">
+				<select v-model="Platform" asp-for="Platform">
+					<option value="" disabled selected>Choose your platform</option>
+					<option value="1">PC</option>
+					<option value="2">Xbox Series X</option>
+					<option value="3">Playstation 5</option>
+				</select>
+			</span>
+		</div>
+		<div id="total_price" style="color: white; opacity: 0.8; font-size: 16px">
+			<p style="font-size: larger">Subtotal: {{PriceTotal}}€</p>
+		</div>
+		<div>
+			<input type="submit" value="Submit" class="btn btn-dark" id="">
+		</div>
+	</form>
 </div>
 
 @section Scripts
