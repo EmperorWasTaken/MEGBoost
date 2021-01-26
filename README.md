@@ -1,10 +1,27 @@
-# MEGBoost
-MEGBoost - We gotchu fam
+# MEGBoost!
 
-Les dette før du gjør endringer i filene!
+## Introduction
+This is MEGBoost's website code. MEGBoost is a website for buying services if you're a gamer. 
 
-    Alle commits skal gjøres til en branch som ikke er master : git checkout -b | -b brukes for å lage en ny, dropp det for å gå til en eksisterende branch.
+## Task List:
 
-    All HTML som skrives skal merkes med id som holder en lik form uansett hvilket dokument du er i, slik at alle lett kan skjønne id'ene som andre skriver eks. id="_<tag/group>_nr" jobber du i Views/Home/index.cshtml og lager en header skal den merkes f.eks id="main_header", id'er for layout.cshtml skal beskrives grundigere med filnavn først eks id="Home_index_main_header"
+- [ ] Payment System.
+- [ ] 3PI Game integrations.
+- [ ] LiveChat Bot.
+- [ ] Hosting.
+- [ ] Publishing.
 
-    Pull request må godkjennes av minst 1 annet medlem av gruppen for å forhindre slurvefeil som koster oss masse ekstra arbeid.
+
+## Completed:
+- [x] Make a base project.
+- [x] Create a Git repository.
+- [x] Push base project with new README. & .gitignore
+- [x] Divide UI/Layout
+- [x] Login Page
+- [x] Signup Page
+- [x] User Page
+- [x] Home Page
+- [x] Admin Page
+- [x] Game selection
+- [x] Database Integration
+
